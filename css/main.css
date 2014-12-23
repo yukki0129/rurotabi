@@ -43,3 +43,33 @@ background: url("back.jpg");
     bottom: -30px;
     left: 95px;
 }
+
+
+
+.loader span{
+	display: inline-block;
+	vertical-align: middle;
+	width:10px;
+	height:40px;
+	-webkit-animation: loader 0.8s  infinite;
+	-moz-animation: loader 0.8s infinite;
+	border-radius: 2px;
+    opacity: 0;
+}
+
+.loader span:nth-of-type(1){ -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; background:#f00; }
+.loader span:nth-of-type(2){ -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; background:#f69; }
+.loader span:nth-of-type(2){ -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; background:#fc0; }
+.loader span:nth-of-type(3){ -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; background:#3c3; }
+.loader span:nth-of-type(4){ -webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; background:#09f; }
+.loader span:nth-of-type(5){ -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; background:#96f; }
+
+@-webkit-keyframes loader {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes loader {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

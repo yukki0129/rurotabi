@@ -71,7 +71,8 @@ switch($_POST['entry_area']){
   
   詳しい条件を選んでください<br/>
    <div role="main" class="ui-content">
-    <form method="POST" action="confilm.php" name="detail" data-ajax="false">
+    <!--<form method="POST" action="confilm.php" name="detail" data-ajax="false">-->
+    <form method="POST" action="serching.php" name="detail" data-ajax="false">
       <div class="ui-field-contain">
        <label for="duration">所要時間：</label>
        <br/>

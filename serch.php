@@ -1,6 +1,7 @@
 <?php
 //指定処理
 
+/*
 if(isset($_POST['duration'])){
 $_SESSION['duration'] = $_POST['duration'];
 }else{
@@ -12,7 +13,11 @@ $_SESSION['wantdo'] = $_POST['wantdo'];
 }else{
 $_SESSION['wantdo'] = "目的を取得できませんでした";
 }
-
+*/
+$get_area = $_SESSION['AREA'];
+$get_time = $_SESSION['duration'];
+$get_want = $_SESSION["wantdo"];
+$error_state = false;
 
 switch($_SESSION['duration']){
 	case "2h":
@@ -32,6 +37,7 @@ switch($_SESSION['duration']){
 		break;
 	default:
 		$text1="<span style='color:red;'>取得エラー</span>";
+		$error_state = true;
 		break;
 		}
 
@@ -53,6 +59,7 @@ switch($_SESSION['wantdo']){
 		break;
 	default:
 		$text2 ="<span style='color:red;'>取得エラー</span>";
+		$error_state = true;
 		break;
 		}
 		
@@ -76,16 +83,16 @@ switch($_SESSION['AREA']){
 		$text3 = "現在地周辺";
 		break;
 	default:
-		$text3 ="<span style='color:red;'>エラーが発生しました。<br/>".$_SESSION['AREA']."</span>";
+		$text3 ="<span style='color:red;'>取得エラー</span>";
+		$error_state = true;
 		break;
 		}
 //指定処理ここまで
 
-$get_area = $_SESSION['AREA'];
-$get_time = $_SESSION['duration'];
-$get_want = $_SESSION["wantdo"];
 
-switch ($get_want) {
+
+//追加すべき項目：時間(get_time)に合致する条件設置
+switch ($get_want) {//何をしたいかの検索
 	case 'thekyoto':
 		$min_kyot = 70;
 		$min_date = 0;
@@ -150,41 +157,5 @@ for ($i=0;!feof($handle);$i++){
 fclose($handle);
 
 //str[n][n2]に格納完了
-
-/*
-$agreement_count = 0;
-for ($i=0; $i < $file_count ; $i++) { 
-	if($get_area == $str[$i][3]){
-	print("It's OK for ".$i."<br>");
-	$agreement_count++;
-	}else{
-		print("not found".$str[$i][3]."/<br>");
-	}
-	$i++;
-}
-if($agreement_count == 0){
-	#何もない時の処理
-}
-
-*/
-	/*
-	if($data == $get_area || $get_area == "UNSELECTED"){ //エリアが合致すれば
-		//ここから評価
-		//if($str[$cnt][6] >= $min_kyot && $str[$cnt][7] >= $min_date && $str[$cnt][8] >= $min_hide && $str[$cnt][9] >= $min_natu && $str[$cnt][10] >= $min_ligh){
-		if($str[$cnt][6] >= $min_kyot){
-			$testmes = "SCORE SET : ";	
-		}else{
-			$testmes = "NON 01:".$str[$cnt][0];
-		}
-		//$name = $str[$cnt][1];
-		//$description = $str[$cnt][2];
-
-	}else{
-			$testmes = "NON 02";
-		}
-	$cnt++;
-}
-*/
-
 
 ?>
