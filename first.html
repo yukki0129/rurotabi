@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>エリア選択 - Kyotoreasure</title>
+<script type="text/javascript" src="./js/text.js"></script>
+<link rel="stylesheet"
+       href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"/>
+<script src="./js/text.js"></script>
+<link href="./css/main.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<div data-role="page">
+
+<div id="panel" data-role="panel" data-display="overlay">
+  <h3>近くのスポット検索</h3>
+    <a href="login.html" class="ui-btn ui-btn-a">近くのランチ</a>
+    <a href="login.html" class="ui-btn ui-btn-a"></a>
+    <a href="login.html" class="ui-btn ui-btn-a">近くのランチ</a>
+    <a href="#" data-rel="close"
+      class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
+</div>
+
+  <div data-role="header" data-theme="b" data-position="fixed">
+     <a href="index.html" class="ui-btn ui-btn-a ui-btn-left">Home</a>
+    <h1>スタートページ</h1>
+     <a href="login.html" class="ui-btn ui-btn-a ui-btn-right">Logout</a>
+  </div>
+  <div role="main" class="ui-content" align="center">
+  <img src="./img/logo_rurotabi.png" width="100%" style="max-width:500px" alt="Kyotoreasure"><br/>
+
+<div class="wrapper">
+  <div class="box">
+    <script type="text/javascript">
+    rt1();
+    </script>
+  </div>
+
+</div>
+      <img src="./img/chara/lookup.png"/><br/>
+      <small>&copy; 2006 Mozilla Japan</small>
+
+   <div role="main" class="ui-content">
+    <form method="POST" action="detail.php">
+      <div class="ui-field-contain">
+       <label for="entry_area">希望エリア：</label>
+       <select id="entry_area" name="entry_area">
+         <option value="area01">京都駅付近</option>
+         <option value="area02">金閣寺付近(北区)</option>
+         <option value="area03">清水寺付近(東山区)</option>
+         <option value="area04">嵐山付近(左京区)</option>
+         <option value="nowarea">現在地周辺</option>
+         <option value="area00">エリアはお任せ</option>
+       </select>
+       <button class="ui-btn" type="submit">次へ</button>
+     </div>
+    </form>
+  </div>
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h3>Copyright 2014, Project Kyotreasure.</h3>
+  </div>
+</div>
+
+</body>
+</html>

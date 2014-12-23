@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>エリア選択 - Kyotoreasure</title>
+<link rel="stylesheet"
+       href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js">
+</script>
+</head>
+<body>
+<?php
+if(isset($_POST['entry_area']){
+$text = "OK";
+}else{
+$text = "NG";
+?>
+
+</script>
+<div data-role="page">
+  <div data-role="header" data-theme="b" data-position="fixed">
+     <a href="index.html" class="ui-btn ui-btn-a ui-btn-left">Home</a>
+    <h1>詳細条件</h1>
+     <a href="login.html" class="ui-btn ui-btn-a ui-btn-right">Logout</a>
+  </div>
+  <div role="main" class="ui-content" align="center">
+  <img src="./img/logo.png" width="100%" style="max-width:500px" alt="Kyotoreasure"><br/>
+  詳しい条件を選んでください<br/>
+   <div role="main" class="ui-content">
+    <form method="POST" action="">
+      <div class="ui-field-contain">
+       <label for="entry_area">所要時間：</label>
+       <select id="entry_area" name="entry_area">
+         <option value="area01">ミニ観光</option>
+         <option value="area02">半日コース</option>
+         <option value="area03">1日まるごと！</option>
+         <option value="area04">午前中のみ</option>
+         <option value="area00">夜の京都</option>
+       </select>
+       <br/>
+       <label for="entry_area">何がしたい？：</label>
+         <select id="entry_area" name="entry_area">
+         <option value="thekyoto">正統派京都観光</option>
+         <option value="date">デート</option>
+         <option value="minor">隠れスポット巡り</option>
+         <option value="work4">＊＊＊＊＊</option>
+         <option value="work5">＊＊＊＊＊</option>
+       </select>
+       <button class="ui-btn" onClick="areasent()">次へ</button>
+     </div>
+    </form>
+  </div>
+  <?php
+  echo("state:".$text.".");
+  ?>
+  
+  </div>
+  <div data-role="footer">
+    <h3>Copyright 2014, Project Kyotreasure.</h3>
+  </div>
+</div>
+
+</body>
+</html>
