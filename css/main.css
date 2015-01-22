@@ -11,7 +11,14 @@ background: url("back.jpg");
    position: relative;
 } 
 
-
+.box2 {
+	vertical-align:middle;
+	position: relative;
+	background: #ccc;
+	display:inline-block;
+	padding: 5px 10px;
+	border-radius: 50px;
+}
   
 .box {
 	vertical-align:middle;
@@ -73,3 +80,4 @@ background: url("back.jpg");
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
+

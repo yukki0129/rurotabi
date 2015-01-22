@@ -13,7 +13,7 @@ $code = "error";
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>エリア選択 - Kyotoreasure</title>
+<title>プラン詳細 - るろたび</title>
 <!--Main Script-->
 <script type="text/javascript" src="./js/text.js"></script>
 <link rel="stylesheet"
@@ -52,7 +52,8 @@ print('<h2>'.@$str[$code][1].'</h2>');
   print('<h2>エラー</h2>');
 }
   ?>
-
+</div>
+<div>
   <!--loadURL...-->
 <?php 
 $geturl = "data/plan/".@$str[$code][11];
@@ -67,7 +68,7 @@ echo $geted_page;
 ?>
 </div>
  
-</div>
+
 
 <div data-role="footer" data-position="fixed">
     <div data-role="navbar">
@@ -79,7 +80,7 @@ echo $geted_page;
     </div>
 </div>
 </div>
-
+</div>
 
 </body>
 </html>
