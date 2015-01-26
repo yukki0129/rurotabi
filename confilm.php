@@ -8,7 +8,7 @@ include 'serch.php';
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>エリア選択 - Kyotoreasure</title>
+<title>検索結果 - るろたび</title>
 <!--Script Load-->
 <script type="text/javascript" src="./js/text.js"></script>
 <link rel="stylesheet"
@@ -25,7 +25,7 @@ $allcount = 0;
 <body>
 
 <!--Header-->
-<div data-role="page">
+<div data-role="page" data-title="検索結果 - るろたび">
   <div data-role="header" data-theme="b" data-position="fixed">
      <a href="#panel" class="ui-btn ui-btn-a ui-icon-gear ui-btn-icon-left">Menu</a>
     <h1>検索結果</h1>

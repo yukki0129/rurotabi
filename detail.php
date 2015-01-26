@@ -38,20 +38,16 @@ switch($_POST['entry_area']){
 		$_SESSION['AREA'] = "KINKAKU";
 		break;
 	case "area03":
-		$text = "清水寺付近";
-		$_SESSION['AREA'] = "KIYOMIZU";
+		$text = "銀閣寺付近";
+		$_SESSION['AREA'] = "GINKAKU";
 		break;
 	case "area04":
-		$text = "伏見稲荷付近";
+		$text = "嵐山付近";
 		$_SESSION['AREA'] = "HUSHIMI";
 		break;
 	case "area00":
 		$text = "エリア指定なし";
 		$_SESSION['AREA'] = "UNSELECTED";
-		break;
-	case "nowarea":
-		$text = "現在地周辺";
-		$_SESSION['AREA'] = "NOW";
 		break;
 	default:
 		$text="<span style='color:red;'>エラーが発生しました。<br/>最初からやり直してください。</span>";
@@ -105,7 +101,7 @@ switch($_POST['entry_area']){
   <p id="gmap"></p>
   </div>
   <div data-role="footer">
-    <h3>Copyright 2014, Project Kyotreasure.</h3>
+    <h3>Copyright 2014, Rurotabi Project.</h3>
   </div>
 </div>
 
