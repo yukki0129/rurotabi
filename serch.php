@@ -112,7 +112,7 @@ switch ($get_want) {//何をしたいかの検索
 	case 'minor':
 		$min_kyot = 20;
 		$min_date = 0;
-		$min_hide = 80;
+		$min_hide = 70;
 		$min_natu = 10;
 		$min_ligh = 0;
 		break;
@@ -129,7 +129,7 @@ switch ($get_want) {//何をしたいかの検索
 		$min_kyot = 40;
 		$min_date = 20;
 		$min_hide = 0;
-		$min_natu = 80;
+		$min_natu = 40;
 		$min_ligh = 0;
 		break;
 
