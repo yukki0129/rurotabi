@@ -33,12 +33,14 @@ var toDoubleDigits = function(num) {
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
 time1_h = 10;time1_m = toDoubleDigits(00);
-time2_h = 10;time2_m = toDoubleDigits(30);
+time2_h = 11;time2_m = toDoubleDigits(00);
 time3_h = 12;time3_m = toDoubleDigits(30);
-time4_h = 14;time4_m = toDoubleDigits(30);
-time5_h = 15;time5_m = toDoubleDigits(30);
-time6_h = 17;time6_m = toDoubleDigits(30);
-time7_h = 19;time7_m = toDoubleDigits(00);
+time4_h = 14;time4_m = toDoubleDigits(00);
+time5_h = 15;time5_m = toDoubleDigits(00);
+time6_h = 16;time6_m = toDoubleDigits(00);
+time7_h = 17;time7_m = toDoubleDigits(00);
+time8_h = 18;time8_m = toDoubleDigits(00);
+time9_h = 19;time9_m = toDoubleDigits(00);
 time1 = ""+time1_h+time1_m;
 time2 = ""+time2_h+time2_m;
 time3 = ""+time3_h+time3_m;
@@ -46,6 +48,8 @@ time4 = ""+time4_h+time4_m;
 time5 = ""+time5_h+time5_m;
 time6 = ""+time6_h+time6_m;
 time7 = ""+time7_h+time7_m;
+time8 = ""+time8_h+time8_m;
+time9 = ""+time9_h+time9_m;
 
 timecal = ""+hour+min;
 
@@ -56,23 +60,27 @@ SchDef_D3 = '</p></div>'
 /*Unchanged text end*/
 
 /*Change text*/
-SchTxt01_a = '京都駅に集合';
-SchTxt01_b = '10:00<br>京都駅から出発します。'
-SchTxt02_a = '伏見稲荷へ';
-SchTxt02_b = '10:30～11:30<br>伏見稲荷を見学します。<br>有名な「千本鳥居」をご覧ください。<br>11:30には次の場所へ移動します。'
-SchTxt03_a = '祇園四条でランチ＆買い物';
-SchTxt03_b = '12:30～14:30<br>祇園四条にてランチ！<br>その後は祇園にてお買い物をお楽しみください。'
-SchTxt04_a = '四条大橋・八坂神社を見学';
-SchTxt04_b = '14:30～15:30<br>四条大橋と八坂神社を見学します。'
-SchTxt05_a = '三十三間堂＆京都タワー';
-SchTxt05_b = '15:30～17:30<br>三十三間堂＆京都タワー！<br>三十三間堂で仏像などを見た後、京都タワーからの眺めをお楽しみください！'
-SchTxt06_a = '京都駅付近で夜ごはん';
-SchTxt06_b = '17:30～19:00<br>京都駅付近で夜ご飯をどうぞ。<br>駅ビル、ポルタなどがおすすめです。'
-SchTxt07_a = '駅展望台＆空中回廊';
-SchTxt07_b = '19:00～20:00<br>京都駅の駅展望台と空中回廊へ。<br>空中回廊からは京都の夜景をお楽しみいただけます。'
+SchTxt01_a = '竹林の小径';
+SchTxt01_b = '10:00〜11:00<br>竹林から出発します。<br>かぐや姫に会えるかも！？（笑）'
+SchTxt02_a = '祇王寺・滝口寺';
+SchTxt02_b = '11:00～12:30<br>「平家物語」ゆかりの地。'
+SchTxt03_a = 'ランチ';
+SchTxt03_b = '12:30～14:00<br>お楽しみのランチタイム！今の気分は和食？それとも洋食？'
+SchTxt04_a = '清涼寺（嵯峨釈迦堂）';
+SchTxt04_b = '14:00～15:00<br>「融通念仏の道場」としても知られています。'
+SchTxt05_a = '二尊院';
+SchTxt05_b = '15:00～16:00<br>「発遣の釈迦」と「来迎の阿弥陀」の二如来像に由来しています。'
+SchTxt06_a = '落柿舎';
+SchTxt06_b = '16:00～17:00<br>柿がすべて台風で落ちてしまったためこう呼ばれています。'
+SchTxt07_a = '大河内山荘';
+SchTxt07_b = '17:00～18:00<br>30年かけて作られた庭園をご覧ください。'
+SchTxt08_a = '天龍寺';
+SchTxt08_b = '18:00～19:00<br>京都五山の中で第一位です。'
+SchTxt09_a = '夜ご飯';
+SchTxt09_b = '18:00～19:00<br>京都ならではのものをどうぞ。'
 /*Change text end*/
 
-for(var i = 1; i<8; i++){//予定時刻経過をテキストの数に応じて変更
+for(var i = 1; i<10; i++){//予定時刻経過をテキストの数に応じて変更
 	if(timecal > eval("time"+ i)){
 		eval('caution0'+i+'_a = "<img src=\'./img/caution.png\'>";');
 		eval('caution0'+i+'_b = "<span style=\'color:red; font-size:small;\'>【予定時刻を過ぎました】</span><br>";');
@@ -93,6 +101,8 @@ for(var i = 1; i<8; i++){//予定時刻経過をテキストの数に応じて�
 					document.write("<tr valign='top'><td width='10%' align='center'><br>"+time5_h+":"+time5_m+"</td><td width='75%'>"+sch05+"</td></tr>");
 						document.write("<tr valign='top'><td width='10%' align='center'><br>"+time6_h+":"+time6_m+"</td><td width='75%'>"+sch06+"</td></tr>");
 							document.write("<tr valign='top'><td width='10%' align='center'><br>"+time7_h+":"+time7_m+"</td><td width='75%'>"+sch07+"</td></tr>");
+								document.write("<tr valign='top'><td width='10%' align='center'><br>"+time8_h+":"+time8_m+"</td><td width='75%'>"+sch08+"</td></tr>");
+									document.write("<tr valign='top'><td width='10%' align='center'><br>"+time9_h+":"+time9_m+"</td><td width='75%'>"+sch09+"</td></tr>");
 	</script>
 </table>
 <br/>
