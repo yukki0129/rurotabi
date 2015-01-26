@@ -43,7 +43,7 @@ switch($_POST['entry_area']){
 		break;
 	case "area04":
 		$text = "嵐山付近";
-		$_SESSION['AREA'] = "HUSHIMI";
+		$_SESSION['AREA'] = "ARASHI";
 		break;
 	case "area00":
 		$text = "エリア指定なし";

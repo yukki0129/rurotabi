@@ -73,8 +73,8 @@ switch($_SESSION['AREA']){
 	case "KIYOMIZU":
 		$text3 = "清水寺付近";
 		break;
-	case "HUSHIMI":
-		$text3 = "伏見稲荷付近";
+	case "ARASHI":
+		$text3 = "嵐山付近";
 		break;
 	case "UNSELECTED":
 		$text3 = "エリア指定なし";
