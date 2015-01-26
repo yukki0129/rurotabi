@@ -12,7 +12,7 @@ var toDoubleDigits = function(num) {
 </script>
 <h3>概要</h3>
 <p>
-	ここに概要(100文字程度でこのプランで何をするか、どこに行くか)などを記述してください。<br/>
+	1日かけて金閣寺周辺をデートします。パワースポット等に興味のある方にもおすすめ！<br/>
 	このプランは10:00開始推奨です。
 	<script type="text/javascript">
 	if(hour > 11){//予定時刻
@@ -33,19 +33,18 @@ var toDoubleDigits = function(num) {
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
 time1_h = 10;time1_m = toDoubleDigits(00);
-time2_h = 10;time2_m = toDoubleDigits(30);
+time2_h = 11;time2_m = toDoubleDigits(30);
 time3_h = 12;time3_m = toDoubleDigits(30);
-time4_h = 14;time4_m = toDoubleDigits(30);
-time5_h = 15;time5_m = toDoubleDigits(30);
-time6_h = 17;time6_m = toDoubleDigits(30);
-time7_h = 19;time7_m = toDoubleDigits(00);
+time4_h = 14;time4_m = toDoubleDigits(00);
+time5_h = 15;time5_m = toDoubleDigits(00);
+time6_h = 18;time6_m = toDoubleDigits(00);
+
 time1 = ""+time1_h+time1_m;
 time2 = ""+time2_h+time2_m;
 time3 = ""+time3_h+time3_m;
 time4 = ""+time4_h+time4_m;
 time5 = ""+time5_h+time5_m;
 time6 = ""+time6_h+time6_m;
-time7 = ""+time7_h+time7_m;
 
 timecal = ""+hour+min;
 
@@ -56,20 +55,18 @@ SchDef_D3 = '</p></div>'
 /*Unchanged text end*/
 
 /*Change text*/
-SchTxt01_a = '京都駅に集合';
-SchTxt01_b = '10:00<br>京都駅から出発します。'
-SchTxt02_a = '伏見稲荷へ';
-SchTxt02_b = '10:30～11:30<br>伏見稲荷を見学します。<br>有名な「千本鳥居」をご覧ください。<br>11:30には次の場所へ移動します。'
-SchTxt03_a = '祇園四条でランチ＆買い物';
-SchTxt03_b = '12:30～14:30<br>祇園四条にてランチ！<br>その後は祇園にてお買い物をお楽しみください。'
-SchTxt04_a = '四条大橋・八坂神社を見学';
-SchTxt04_b = '14:30～15:30<br>四条大橋と八坂神社を見学します。'
-SchTxt05_a = '三十三間堂＆京都タワー';
-SchTxt05_b = '15:30～17:30<br>三十三間堂＆京都タワー！<br>三十三間堂で仏像などを見た後、京都タワーからの眺めをお楽しみください！'
-SchTxt06_a = '京都駅付近で夜ごはん';
-SchTxt06_b = '17:30～19:00<br>京都駅付近で夜ご飯をどうぞ。<br>駅ビル、ポルタなどがおすすめです。'
-SchTxt07_a = '駅展望台＆空中回廊';
-SchTxt07_b = '19:00～20:00<br>京都駅の駅展望台と空中回廊へ。<br>空中回廊からは京都の夜景をお楽しみいただけます。'
+SchTxt01_a = '晴明神社見学！';
+SchTxt01_b = '10:00<br>厄難退散で有名な晴明神社でパワー注入！'
+SchTxt02_a = '北野天満宮を見学';
+SchTxt02_b = '11:30～12:30<br>北野天満宮を見学します。<br>北野天満宮は学問の神さまとして有名です。受験のときは是非！'
+SchTxt03_a = '近辺でランチ';
+SchTxt03_b = '12:30～14:00<br>北野天満宮付近にてランチ！<br>お楽しみのランチタイム！今の気分は和食？それとも洋食？'
+SchTxt04_a = '金閣寺を見学';
+SchTxt04_b = '14:00～15:00<br>京都と言えば金閣寺。<br>有名な世界遺産に登録されている輝きを目に焼き付けましょう！'
+SchTxt05_a = '東映太秦映画村を見学！';
+SchTxt05_b = '15:00～18:00<br>殿様や芸者さん、忍者に大変身！思い出に写真も残せますよ。';
+SchTxt06_a = '付近で夜ごはん';
+SchTxt06_b = '18:00～19:00<br>京都ならではの夜ご飯をどうぞ。<br>';
 /*Change text end*/
 
 for(var i = 1; i<8; i++){//予定時刻経過をテキストの数に応じて変更

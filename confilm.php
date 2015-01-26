@@ -77,7 +77,7 @@ $allcount = 0;
 				if($min_hide <= $str[$i][7]){
 					if($min_natu <= $str[$i][8]){
 						if($min_ligh <= $str[$i][9]){
-
+             if($ampm == $str[$i][10]){
 							print("<li><a href='plan.php?code=".$str[$i][0]."' data-ajax='false' data-transition='slide'><img src='./img/top/".$str[$i][12]."'><h2>".$str[$i][1]."</h2>");
 							print("<p>".$str[$i][2]."<br/>");
 							$needtime_h =  floor ($str[$i][4] / 60); 
@@ -87,6 +87,7 @@ $allcount = 0;
 							//print("<tr><td>【京".$str[$i][5]."】【愛".$str[$i][6]."】【隠".$str[$i][7]."】【緑".$str[$i][8]."】【光".$str[$i][9]."】</td></tr>");//debug
 							print("</li>");
 							$agreement_count++;//このカウントが0＝表示件数0
+            }
 						}
 					}
 				}
