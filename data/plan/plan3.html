@@ -43,12 +43,12 @@ var calMins = function (mins) {
 /*タイムリミット設定
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
-time1_h = 10;time1_m = toDoubleDigits(00);
-time2_h = 10;time2_m = toDoubleDigits(30);
-time3_h = 12;time3_m = toDoubleDigits(30);
-time4_h = 14;time4_m = toDoubleDigits(30);
-time5_h = 15;time5_m = toDoubleDigits(30);
-time6_h = 17;time6_m = toDoubleDigits(30);
+time1_h = hours;time1_m = toDoubleDigits(calMins(mins));
+time2_h = hours;time2_m = toDoubleDigits(calMins(mins+30));
+time3_h = hours+1;time3_m = toDoubleDigits(mins);
+time4_h = hours+2;time4_m = toDoubleDigits(mins);
+time5_h = hours+3;time5_m = toDoubleDigits(mins);
+time6_h = hours+4;time6_m = toDoubleDigits(mins);
 
 time1 = ""+time1_h+time1_m;
 time2 = ""+time2_h+time2_m;
