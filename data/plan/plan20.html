@@ -12,7 +12,7 @@ var toDoubleDigits = function(num) {
 </script>
 <h3>概要</h3>
 <p>
-	ここに概要(100文字程度でこのプランで何をするか、どこに行くか)などを記述してください。<br/>
+	銀閣寺を見学後、哲学の道などを観光する1日コースです。<br/>
 	このプランは10:00開始推奨です。
 	<script type="text/javascript">
 	if(hour > 11){//予定時刻
@@ -33,12 +33,12 @@ var toDoubleDigits = function(num) {
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
 time1_h = 10;time1_m = toDoubleDigits(00);
-time2_h = 10;time2_m = toDoubleDigits(30);
+time2_h = 11;time2_m = toDoubleDigits(30);
 time3_h = 12;time3_m = toDoubleDigits(30);
-time4_h = 14;time4_m = toDoubleDigits(30);
+time4_h = 14;time4_m = toDoubleDigits(00);
 time5_h = 15;time5_m = toDoubleDigits(30);
-time6_h = 17;time6_m = toDoubleDigits(30);
-time7_h = 19;time7_m = toDoubleDigits(00);
+time6_h = 16;time6_m = toDoubleDigits(30);
+time7_h = 18;time7_m = toDoubleDigits(00);
 time1 = ""+time1_h+time1_m;
 time2 = ""+time2_h+time2_m;
 time3 = ""+time3_h+time3_m;
@@ -57,19 +57,20 @@ SchDef_D3 = '</p></div>'
 
 /*Change text*/
 SchTxt01_a = '京都駅に集合';
-SchTxt01_b = '10:00<br>京都駅から出発します。'
-SchTxt02_a = '伏見稲荷へ';
-SchTxt02_b = '10:30～11:30<br>伏見稲荷を見学します。<br>有名な「千本鳥居」をご覧ください。<br>11:30には次の場所へ移動します。'
-SchTxt03_a = '祇園四条でランチ＆買い物';
-SchTxt03_b = '12:30～14:30<br>祇園四条にてランチ！<br>その後は祇園にてお買い物をお楽しみください。'
-SchTxt04_a = '四条大橋・八坂神社を見学';
-SchTxt04_b = '14:30～15:30<br>四条大橋と八坂神社を見学します。'
+SchTxt01_b = '10:00～11:30<br>銀閣寺周辺を散策します。<br>銀閣寺垣では18種類の木々を使っておりどの季節でも楽しめます。';
+SchTxt02_a = '哲学の道へ';
+SchTxt02_b = '11:30～12:30<br>春には桜が咲き誇る、哲学の道を観光。<br>名前の由来は京都の哲学者が好んで散策していたからだそうです。';
+SchTxt03_a = '哲学の道付近でランチ';
+SchTxt03_b = '12:30～14:00<br>哲学の道にてランチ！<br><a href="http://tabelog.com/lunch/kyoto/S7/S18903/COND-0-0-1-0-0-0-0/D-rt/" target="_blank">哲学の道周辺のランチ情報(食べログ)</a>'
+SchTxt04_a = '永観堂を見学';
+SchTxt04_b = '14:30～15:30<br>禅林寺の通称が永観堂です。静かな林と云う名のお寺という意味だそう。';
 SchTxt05_a = '三十三間堂＆京都タワー';
-SchTxt05_b = '15:30～17:30<br>三十三間堂＆京都タワー！<br>三十三間堂で仏像などを見た後、京都タワーからの眺めをお楽しみください！'
-SchTxt06_a = '京都駅付近で夜ごはん';
-SchTxt06_b = '17:30～19:00<br>京都駅付近で夜ご飯をどうぞ。<br>駅ビル、ポルタなどがおすすめです。'
-SchTxt07_a = '駅展望台＆空中回廊';
-SchTxt07_b = '19:00～20:00<br>京都駅の駅展望台と空中回廊へ。<br>空中回廊からは京都の夜景をお楽しみいただけます。'
+SchTxt05_b = '15:30～16:30<br>水路閣を見学<br>生活に必要な水を琵琶湖から運んでいる水道橋です。';
+SchTxt06_a = '慈氏院・金地院へ';
+SchTxt06_b = '16:30～18:00<br>慈氏院・金地院を見学します。<br>金地院は南禅寺の塔頭の（たっちゅう）の一つです。'
+SchTxt07_a = '付近で夜ご飯';
+SchTxt07_b = '18:00～<br>付近で夜ご飯をどうぞ。<br><a href="http://r.gnavi.co.jp/area/jp/rs/?fwr=南禅寺" target="_blank">南禅寺周辺のディナー情報(ぐるなび)'
+
 /*Change text end*/
 
 for(var i = 1; i<8; i++){//予定時刻経過をテキストの数に応じて変更

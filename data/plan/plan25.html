@@ -12,7 +12,7 @@ var toDoubleDigits = function(num) {
 </script>
 <h3>概要</h3>
 <p>
-	ここに概要(100文字程度でこのプランで何をするか、どこに行くか)などを記述してください。<br/>
+	銀閣寺周辺を3時間で散策できます。<br/>
 	このプランは10:00開始推奨です。
 	<script type="text/javascript">
 	if(hour > 11){//予定時刻
@@ -33,19 +33,11 @@ var toDoubleDigits = function(num) {
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
 time1_h = 10;time1_m = toDoubleDigits(00);
-time2_h = 10;time2_m = toDoubleDigits(30);
-time3_h = 12;time3_m = toDoubleDigits(30);
-time4_h = 14;time4_m = toDoubleDigits(30);
-time5_h = 15;time5_m = toDoubleDigits(30);
-time6_h = 17;time6_m = toDoubleDigits(30);
-time7_h = 19;time7_m = toDoubleDigits(00);
+time2_h = 11;time2_m = toDoubleDigits(00);
+time3_h = 12;time3_m = toDoubleDigits(00);
 time1 = ""+time1_h+time1_m;
 time2 = ""+time2_h+time2_m;
 time3 = ""+time3_h+time3_m;
-time4 = ""+time4_h+time4_m;
-time5 = ""+time5_h+time5_m;
-time6 = ""+time6_h+time6_m;
-time7 = ""+time7_h+time7_m;
 
 timecal = ""+hour+min;
 
@@ -56,20 +48,12 @@ SchDef_D3 = '</p></div>'
 /*Unchanged text end*/
 
 /*Change text*/
-SchTxt01_a = '京都駅に集合';
-SchTxt01_b = '10:00<br>京都駅から出発します。'
-SchTxt02_a = '伏見稲荷へ';
-SchTxt02_b = '10:30～11:30<br>伏見稲荷を見学します。<br>有名な「千本鳥居」をご覧ください。<br>11:30には次の場所へ移動します。'
-SchTxt03_a = '祇園四条でランチ＆買い物';
-SchTxt03_b = '12:30～14:30<br>祇園四条にてランチ！<br>その後は祇園にてお買い物をお楽しみください。'
-SchTxt04_a = '四条大橋・八坂神社を見学';
-SchTxt04_b = '14:30～15:30<br>四条大橋と八坂神社を見学します。'
-SchTxt05_a = '三十三間堂＆京都タワー';
-SchTxt05_b = '15:30～17:30<br>三十三間堂＆京都タワー！<br>三十三間堂で仏像などを見た後、京都タワーからの眺めをお楽しみください！'
-SchTxt06_a = '京都駅付近で夜ごはん';
-SchTxt06_b = '17:30～19:00<br>京都駅付近で夜ご飯をどうぞ。<br>駅ビル、ポルタなどがおすすめです。'
-SchTxt07_a = '駅展望台＆空中回廊';
-SchTxt07_b = '19:00～20:00<br>京都駅の駅展望台と空中回廊へ。<br>空中回廊からは京都の夜景をお楽しみいただけます。'
+SchTxt01_a = '銀閣寺を観光';
+SchTxt01_b = '10:00～11:00<br>銀閣寺付近を観光します。<br>銀閣寺垣では18種類の木々を使っておりどの季節でも楽しめます。';
+SchTxt02_a = '法然院へ';
+SchTxt02_b = '11:00～12:00<br>法然寺を見学します。<br>境内には池泉と砂盛があり、善気水が湧きます。';
+SchTxt03_a = '哲学の道周辺を散策';
+SchTxt03_b = '12:00～13:00<br>哲学の道を散策します。<br>名前の由来は京都の哲学者が好んで散策していたからだそうです。';
 /*Change text end*/
 
 for(var i = 1; i<8; i++){//予定時刻経過をテキストの数に応じて変更
@@ -89,11 +73,7 @@ for(var i = 1; i<8; i++){//予定時刻経過をテキストの数に応じて�
 	document.write("<tr valign='top'><td width='10%' align='center'><br>"+time1_h+":"+time1_m+"</td><td width='75%'>"+sch01+"</td></tr>");
 		document.write("<tr valign='top'><td width='10%' align='center'><br>"+time2_h+":"+time2_m+"</td><td width='75%'>"+sch02+"</td></tr>");
 			document.write("<tr valign='top'><td width='10%' align='center'><br>"+time3_h+":"+time3_m+"</td><td width='75%'>"+sch03+"</td></tr>");
-				document.write("<tr valign='top'><td width='10%' align='center'><br>"+time4_h+":"+time4_m+"</td><td width='75%'>"+sch04+"</td></tr>");
-					document.write("<tr valign='top'><td width='10%' align='center'><br>"+time5_h+":"+time5_m+"</td><td width='75%'>"+sch05+"</td></tr>");
-						document.write("<tr valign='top'><td width='10%' align='center'><br>"+time6_h+":"+time6_m+"</td><td width='75%'>"+sch06+"</td></tr>");
-							document.write("<tr valign='top'><td width='10%' align='center'><br>"+time7_h+":"+time7_m+"</td><td width='75%'>"+sch07+"</td></tr>");
-	</script>
+				</script>
 </table>
 <br/>
 
