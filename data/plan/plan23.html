@@ -12,7 +12,7 @@ var toDoubleDigits = function(num) {
 </script>
 <h3>概要</h3>
 <p>
-	ここに概要(100文字程度でこのプランで何をするか、どこに行くか)などを記述してください。<br/>
+	動物園や銀閣寺を巡る1日デートコースです。<br/>
 	このプランは10:00開始推奨です。
 	<script type="text/javascript">
 	if(hour > 11){//予定時刻
@@ -33,12 +33,12 @@ var toDoubleDigits = function(num) {
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
 time1_h = 10;time1_m = toDoubleDigits(00);
-time2_h = 10;time2_m = toDoubleDigits(30);
-time3_h = 12;time3_m = toDoubleDigits(30);
+time2_h = 12;time2_m = toDoubleDigits(00);
+time3_h = 13;time3_m = toDoubleDigits(00);
 time4_h = 14;time4_m = toDoubleDigits(30);
-time5_h = 15;time5_m = toDoubleDigits(30);
-time6_h = 17;time6_m = toDoubleDigits(30);
-time7_h = 19;time7_m = toDoubleDigits(00);
+time5_h = 16;time5_m = toDoubleDigits(00);
+time6_h = 17;time6_m = toDoubleDigits(00);
+time7_h = 18;time7_m = toDoubleDigits(00);
 time1 = ""+time1_h+time1_m;
 time2 = ""+time2_h+time2_m;
 time3 = ""+time3_h+time3_m;
@@ -56,20 +56,20 @@ SchDef_D3 = '</p></div>'
 /*Unchanged text end*/
 
 /*Change text*/
-SchTxt01_a = '京都駅に集合';
-SchTxt01_b = '10:00<br>京都駅から出発します。'
-SchTxt02_a = '伏見稲荷へ';
-SchTxt02_b = '10:30～11:30<br>伏見稲荷を見学します。<br>有名な「千本鳥居」をご覧ください。<br>11:30には次の場所へ移動します。'
-SchTxt03_a = '祇園四条でランチ＆買い物';
-SchTxt03_b = '12:30～14:30<br>祇園四条にてランチ！<br>その後は祇園にてお買い物をお楽しみください。'
-SchTxt04_a = '四条大橋・八坂神社を見学';
-SchTxt04_b = '14:30～15:30<br>四条大橋と八坂神社を見学します。'
-SchTxt05_a = '三十三間堂＆京都タワー';
-SchTxt05_b = '15:30～17:30<br>三十三間堂＆京都タワー！<br>三十三間堂で仏像などを見た後、京都タワーからの眺めをお楽しみください！'
-SchTxt06_a = '京都駅付近で夜ごはん';
-SchTxt06_b = '17:30～19:00<br>京都駅付近で夜ご飯をどうぞ。<br>駅ビル、ポルタなどがおすすめです。'
-SchTxt07_a = '駅展望台＆空中回廊';
-SchTxt07_b = '19:00～20:00<br>京都駅の駅展望台と空中回廊へ。<br>空中回廊からは京都の夜景をお楽しみいただけます。'
+SchTxt01_a = '京都市動物園を観光';
+SchTxt01_b = '10:00<br>京都市動物園を観光します。<br>かわいい動物たちに癒されましょう。'
+SchTxt02_a = 'ランチタイム';
+SchTxt02_b = '12:00～13:00<br>付近でランチを取ります。<br>お好きな京都料理をどうぞ。';
+SchTxt03_a = '岡崎疎水を観光';
+SchTxt03_b = '13:00～14:00<br>岡崎疎水を観光します。<br>日本最初の水力発電施設があります。';
+SchTxt04_a = '哲学の道を散策';
+SchTxt04_b = '14:00～16:00<br>哲学の道付近を散策します。<br>名前の由来は京都の哲学者が好んで散策していたからだそうです。';
+SchTxt05_a = '法然院を見学';
+SchTxt05_b = '16:00～17:00<br>法然寺へ向かいます。<br>境内には池泉と砂盛があり、善気水が湧きます。'
+SchTxt06_a = '銀閣寺へ';
+SchTxt06_b = '17:00～18:00<br>銀閣寺周辺を散策します。<br>銀閣寺垣では18種類の木々を使っておりどの季節でも楽しめます。';
+SchTxt07_a = '夜ご飯';
+SchTxt07_b = '18:00～<br>京都ならではの夜ご飯を。';
 /*Change text end*/
 
 for(var i = 1; i<8; i++){//予定時刻経過をテキストの数に応じて変更

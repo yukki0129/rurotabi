@@ -77,8 +77,12 @@ $allcount = 0;
 				if($min_hide <= $str[$i][7]){
 					if($min_natu <= $str[$i][8]){
 						if($min_ligh <= $str[$i][9]){
-             if($ampm == $str[$i][10]){
-							print("<li><a href='plan.php?code=".$str[$i][0]."' data-ajax='false' data-transition='slide'><img src='./img/top/".$str[$i][12]."'><h2>".$str[$i][1]."</h2>");
+              if($time_check >= $str[$i][4]){
+							print("<li><a href='plan.php?code=".$str[$i][0]."' data-ajax='false' data-transition='slide'><img src='./img/top/".$str[$i][12]."'><h2>".$str[$i][1]);
+              if($time_check == $str[$i][4]){
+                print("<img src='./img/king_1.png'>");
+              }
+                print("</h2>");
 							print("<p>".$str[$i][2]."<br/>");
 							$needtime_h =  floor ($str[$i][4] / 60); 
 							$needtime_m = $str[$i][4] % 60; 
@@ -96,7 +100,6 @@ $allcount = 0;
 	}
 }
 print("</ul>");
-
 $allcount = $agreement_count;
 if($error_state == true){
 	print('<div align="center"><div class="wrapper"><div class="box2">');

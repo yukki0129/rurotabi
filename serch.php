@@ -22,24 +22,23 @@ $error_state = false;
 switch($_SESSION['duration']){
 	case "2h":
 		$text1 = "ミニ観光";
-		$ampm = 'all';
-		$needtime = '';
+		$time_check = 180;
 		break;
 	case "6h":
 		$text1 = "半日コース";
-		$ampm = 'all';
+		$time_check = 360;
 		break;
 	case "12h":
 		$text1 = "1日丸ごと！";
-		$ampm = 'all';
+		$time_check = 540;
 		break;
 	case "8to12":
 		$text1 = "午前中のみ";
-		$ampm = 'day';
+		$time_check = 180;
 		break;
 	case "20to01":
 		$text1 = "夜の京都";
-		$ampm='night';
+		$time_check = 0;
 		break;
 	default:
 		$text1="<span style='color:red;'>取得エラー</span>";
