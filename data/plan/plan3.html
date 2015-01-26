@@ -29,6 +29,17 @@ var toDoubleDigits = function(num) {
 </strong>です</p>
 <h3>プラン</h3>
 <script>
+//現在時刻から30分足す処理
+hours = parseInt(hour);
+mins = parseInt(min);
+
+var calMins = function (mins) {
+	mins += 30;
+	if (mins > 61) {
+		mins = mins - 60;
+	}
+	return mins;
+}
 /*タイムリミット設定
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
@@ -45,7 +56,6 @@ time3 = ""+time3_h+time3_m;
 time4 = ""+time4_h+time4_m;
 time5 = ""+time5_h+time5_m;
 time6 = ""+time6_h+time6_m;
-
 
 timecal = ""+hour+min;
 

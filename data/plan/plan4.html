@@ -29,6 +29,17 @@ var toDoubleDigits = function(num) {
 </strong>です</p>
 <h3>プラン</h3>
 <script>
+//現在時刻から30分足す処理
+hours = parseInt(hour);
+mins = parseInt(min);
+
+var calMins = function (mins) {
+	mins += 30;
+	if (mins > 61) {
+		mins = mins - 60;
+	}
+	return mins;
+}
 /*タイムリミット設定
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
@@ -57,7 +68,7 @@ SchDef_D3 = '</p></div>'
 
 /*Change text*/
 SchTxt01_a = '京都駅に集合';
-SchTxt01_b = (DD.getHours())+":"+(DD.getMinutes() + 30)+'<br>京都駅から出発します。';
+SchTxt01_b = hours+":"+mins+'<br>京都駅から出発します。';
 SchTxt02_a = '京都御所・京都御苑を見学';
 SchTxt02_b = (DD.getHours()+1)+":"+(DD.getMinutes())+"〜"+(DD.getHours()+2)+":"+(DD.getMinutes())+'<br>京都御所・御苑を見学します。<br>広い敷地の御所ですが九条邸跡を見に行ってください。'
 SchTxt03_a = '本能寺を見学';
