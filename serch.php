@@ -149,7 +149,7 @@ $file_count = 0;
 
 for ($i=0;!feof($handle);$i++){
     $csv=fgets($handle);
-    mb_convert_variables("UTF-8", "SJIS", $csv); 
+    //mb_convert_variables("UTF-8", "SJIS", $csv); 
     $str[$i]=explode(",",$csv);
     $file_count++;
 }
