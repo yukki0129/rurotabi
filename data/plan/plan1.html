@@ -1,4 +1,12 @@
 <script type="text/javascript">
+if(navigator.userAgent.indexOf('Android') > 0) {
+    $(".openmap").each(function(){
+       url = $(this).attr("href").replace("maps:","http://maps.google.com?");
+       $(this).attr("href",url);
+    });
+}
+
+
 var toDoubleDigits = function(num) {
   num += "";
   if (num.length === 1) {
@@ -48,7 +56,7 @@ SchDef_D3 = '</p></div>'
 
 /*Change text*/
 SchTxt01_a = '京都駅に集合';
-SchTxt01_b = '10:00<br>京都駅から出発します。'
+SchTxt01_b = '10:00<br>京都駅から出発します。<br><a href="http://maps.google.com/maps?q=34.985458,135.757755">地図を表示</a>';
 SchTxt02_a = '祇園四条へ';
 SchTxt02_b = '10:30～11:00<br>四条大橋<br>厄除け・疫病退散・商売繁盛を授けてもらいましょう。'
 SchTxt03_a = '八坂神社へ';

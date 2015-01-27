@@ -75,17 +75,14 @@ switch($_SESSION['AREA']){
 	case "KINKAKU":
 		$text3 = "金閣寺付近";
 		break;
-	case "KIYOMIZU":
-		$text3 = "清水寺付近";
+	case "GINKAKU":
+		$text3 = "銀閣寺付近";
 		break;
 	case "ARASHI":
 		$text3 = "嵐山付近";
 		break;
 	case "UNSELECTED":
 		$text3 = "エリア指定なし";
-		break;
-	case "NOW":
-		$text3 = "現在地周辺";
 		break;
 	default:
 		$text3 ="<span style='color:red;'>取得エラー</span>";
