@@ -108,13 +108,13 @@ if($error_state == true){
 	print('<div align="center"><div class="wrapper"><div class="box2">');
 	print("<strong>エラーが発生しました</strong><br/>条件の取得に失敗しました<br/>");
 	print("<span style='color:red;'>検索中に更新ボタンなどを押すとエラーになる場合がございます。</span><br/>");
-	print("恐れ入りますが<a href='first.html'>再検索</a>を<br/>お願い致します。</div></div>");
+	print("恐れ入りますが<a href='first.html' data-ajax='false'>再検索</a>を<br/>お願い致します。</div></div>");
 	print("<img src='./img/chara/notfound2.png'></div>");
 
 }elseif($agreement_count == 0){
 	print('<div align="center"><div class="wrapper"><div class="box2">');
 	print("<strong>ごめんなさい！</strong><br/>条件にマッチするコースが<br/>ありませんでした。<br/>");
-	print("条件を変えて<a href='first.html'>再検索</a><br/>してみてください！</div></div>");
+	print("条件を変えて<a href='first.html' data-ajax='false'>再検索</a><br/>してみてください！</div></div>");
 	print("<img src='./img/chara/notfound2.png'></div>");
 	//単純にデータがなかった時用
 
