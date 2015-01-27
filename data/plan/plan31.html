@@ -30,21 +30,21 @@ var toDoubleDigits = function(num) {
 <h3>プラン</h3>
 <script>
 //現在時刻から30分足す処理
-hours = parseInt(hour);
-mins = parseInt(min);
+var hours = parseInt(hour);
+var mins = parseInt(min);
 
-var calMins = function (mins) {
-	mins += 30;
-	if (mins > 61) {
-		mins = mins - 60;
-	}
-	return mins;
-}
+if (mins > 29) {
+	hours = hours + 1;
+	mins = mins - 30;
+	if (mins < 0) {
+		mins = mins * -1;
+	};
+};
 /*タイムリミット設定
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
-time1_h = hours;time1_m = toDoubleDigits(calMins(mins));
-time2_h = hours;time2_m = toDoubleDigits(calMins(mins+30));
+time1_h = hours;time1_m = toDoubleDigits(mins);
+time2_h = hours;time2_m = toDoubleDigits(mins+30);
 time3_h = hours+1;time3_m = toDoubleDigits(mins);
 time4_h = hours+2;time4_m = toDoubleDigits(mins);
 time5_h = hours+3;time5_m = toDoubleDigits(mins);

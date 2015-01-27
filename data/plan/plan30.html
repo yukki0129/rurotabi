@@ -30,16 +30,16 @@ var toDoubleDigits = function(num) {
 <h3>プラン</h3>
 <script>
 //現在時刻から30分足す処理
-hours = parseInt(hour);
-mins = parseInt(min);
+var hours = parseInt(hour);
+var mins = parseInt(min);
 
-var calMins = function (mins) {
-	mins += 30;
-	if (mins > 61) {
-		mins = mins - 60;
-	}
-	return mins;
-}
+if (mins > 29) {
+	hours = hours + 1;
+	mins = mins - 30;
+	if (mins < 0) {
+		mins = mins * -1;
+	};
+};
 
 /*タイムリミット設定
 time?_hは？時、timw_mは？分をタイムリミットとする。
@@ -69,17 +69,17 @@ SchDef_D3 = '</p></div>'
 
 /*Change text*/
 SchTxt01_a = '渡月橋';
-SchTxt01_b = hours+":"+toDoubleDigits(calMins(mins))+'<br>渡月橋から出発します。<br>大堰川（桂川）に架かる橋です。'
+SchTxt01_b = hours+":"+toDoubleDigits(mins)+'<br>渡月橋から出発します。<br>大堰川（桂川）に架かる橋です。'
 SchTxt02_a = '天龍寺';
-SchTxt02_b = hours+":"+calMins(mins+30)+'～'+(hours+1)+":"+(mins)+'<br>京都五山の中で第一位です。<br>有名な「千本鳥居」をご覧ください。<br>11:30には次の場所へ移動します。'
+SchTxt02_b = hours+":"+toDoubleDigits(mins+30)+'～'+(hours+1)+":"+toDoubleDigits(mins)+'<br>京都五山の中で第一位です。<br>有名な「千本鳥居」をご覧ください。<br>11:30には次の場所へ移動します。'
 SchTxt03_a = '野宮神社';
-SchTxt03_b = (hours+1)+":"+mins+'～'+(hours+2)+":"+(mins)+'<br>えんむすびの神様、子宝安産の神様がいます<br>その後は祇園にてお買い物をお楽しみください。'
+SchTxt03_b = (hours+1)+":"+toDoubleDigits(mins)+'～'+(hours+2)+":"+toDoubleDigits(mins)+'<br>えんむすびの神様、子宝安産の神様がいます<br>その後は祇園にてお買い物をお楽しみください。'
 SchTxt04_a = '大河内山荘';
-SchTxt04_b = (hours+2)+":"+(mins)+'～'+(hours+3)+":"+(mins)+'<br>30年かけて作られた庭園をご覧ください。'
+SchTxt04_b = (hours+2)+":"+(mins)+'～'+(hours+3)+":"+toDoubleDigits(mins)+'<br>30年かけて作られた庭園をご覧ください。'
 SchTxt05_a = '常寂光寺';
-SchTxt05_b = (hours+3)+":"+(mins)+'～'+(hours+4)+":"+(mins)+'<br>高さ12メートル余の多宝塔が美しいです！'
+SchTxt05_b = (hours+3)+":"+(mins)+'～'+(hours+4)+":"+toDoubleDigits(mins)+'<br>高さ12メートル余の多宝塔が美しいです！'
 SchTxt06_a = '清涼寺（嵯峨釈迦堂）';
-SchTxt06_b = (hours+4)+":"+(mins)+'～'+(hours+6)+":"+toDoubleDigits((mins-30))+'<br>「融通念仏の道場」としても知られています。'
+SchTxt06_b = (hours+4)+":"+toDoubleDigits(mins)+'～'+(hours+6)+":"+toDoubleDigits((mins-30))+'<br>「融通念仏の道場」としても知られています。'
 
 /*Change text end*/
 

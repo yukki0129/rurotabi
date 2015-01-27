@@ -30,32 +30,30 @@ var toDoubleDigits = function(num) {
 <h3>プラン</h3>
 <script>
 //現在時刻から30分足す処理
-hours = parseInt(hour);
-mins = parseInt(min);
+var hours = parseInt(hour);
+var mins = parseInt(min);
 
-var calMins = function (mins) {
-	mins += 30;
-	if (mins > 61) {
-		mins = mins - 60;
-	}
-	return mins;
-}
+if (mins > 29) {
+	hours = hours + 1;
+	mins = mins - 30;
+	if (mins < 0) {
+		mins = mins * -1;
+	};
+};
 /*タイムリミット設定
 time?_hは？時、timw_mは？分をタイムリミットとする。
 */
-time1_h = hours;time1_m = toDoubleDigits(calMins(mins));
-time2_h = hours;time2_m = toDoubleDigits(calMins(mins+30));
-time3_h = hours+1;time3_m = toDoubleDigits(mins);
-time4_h = hours+2;time4_m = toDoubleDigits(mins);
-time5_h = hours+3;time5_m = toDoubleDigits(mins);
-time6_h = hours+4;time6_m = toDoubleDigits(mins);
+time1_h = hours;time1_m = toDoubleDigits((mins));
+time2_h = hours;time2_m = toDoubleDigits((mins+30));
+time3_h = hours+2;time3_m = toDoubleDigits(mins);
+time4_h = hours+4;time4_m = toDoubleDigits(mins+30);
+time5_h = hours+5;time5_m = toDoubleDigits(mins+30);
 
 time1 = ""+time1_h+time1_m;
 time2 = ""+time2_h+time2_m;
 time3 = ""+time3_h+time3_m;
 time4 = ""+time4_h+time4_m;
 time5 = ""+time5_h+time5_m;
-time6 = ""+time6_h+time6_m;
 
 timecal = ""+hour+min;
 
@@ -67,16 +65,15 @@ SchDef_D3 = '</p></div>'
 
 /*Change text*/
 SchTxt01_a = '京都駅に集合';
-SchTxt01_b = '10:00<br>京都駅から出発します。'
+SchTxt01_b = hours+":"+toDoubleDigits((mins))+'<br>京都駅から出発します。'
 SchTxt02_a = '伏見稲荷へ';
-SchTxt02_b = '10:30～12:00<br>伏見稲荷を見学します。<br>有名な「千本鳥居」をご覧ください。<br>
-	12:00には次の場所へ移動します。'
+SchTxt02_b = hours+":"+toDoubleDigits(mins+30)+'～'+(hours+2)+":"+toDoubleDigits(mins)+'<br>伏見稲荷を見学します。<br>有名な「千本鳥居」をご覧ください。<br>'+(hours+1)+":"+toDoubleDigits(mins)+'には次の場所へ移動します。'
 SchTxt03_a = '祇園四条でランチ＆買い物';
-SchTxt03_b = '12:00～14:30<br>祇園四条にてランチ！<br>その後は祇園にてお買い物をお楽しみください。'
+SchTxt03_b = (hours+2)+":"+toDoubleDigits(mins)+'～'+(hours+4)+":"+toDoubleDigits(mins)+'<br>祇園四条にてランチ！<br>その後は祇園にてお買い物をお楽しみください。'
 SchTxt04_a = '四条大橋・八坂神社を見学';
-SchTxt04_b = '15:00～17:30<br>厄除け・疫病退散・商売繁盛を授けてもらいましょう。'
+SchTxt04_b = (hours+4)+":"+toDoubleDigits(mins)+'～'+(hours+5)+":"+toDoubleDigits(mins+30)+'<br>厄除け・疫病退散・商売繁盛を授けてもらいましょう。'
 SchTxt05_a = '京都駅付近で解散';
-SchTxt05_b = '17:30～18:00<br>京都駅に帰ってきて解散です。'
+SchTxt05_b = (hours+5)+":"+toDoubleDigits(mins+30)+'<br>京都駅に帰ってきて解散です。'
 /*Change text end*/
 
 for(var i = 1; i<6; i++){//予定時刻経過をテキストの数に応じて変更
