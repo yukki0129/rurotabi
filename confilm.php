@@ -24,22 +24,25 @@ $allcount = 0;
 </head>
 <body>
 
+
 <!--Header-->
+
 <div data-role="page" data-title="検索結果 - るろたび">
   <div data-role="header" data-theme="b" data-position="fixed">
      <a href="#panel" class="ui-btn ui-btn-a ui-icon-gear ui-btn-icon-left">Menu</a>
-    <h1>検索結果</h1>
-     <a href="login.html" class="ui-btn ui-btn-a ui-btn-right">Logout</a>
+    <h1>プラン詳細</h1>
+     <a href="first.html" class="ui-btn ui-btn-a ui-btn-right" data-ajax='false'>Re-Serch</a>
   </div>
-<!--</div>-->
 
 <!--Panel menu-->
 <div id="panel" data-role="panel" data-display="overlay">
-	<h3>Menu</h3>
-    <a href="login.html" class="ui-btn ui-btn-a">Logout</a>
+  <h3>Menu</h3>
+    <a href="first.html" class="ui-btn ui-btn-a" data-ajax='false'>再検索</a>
+    <a href="index.html" class="ui-btn ui-btn-a">トップページ</a>
     <a href="#" data-rel="close"
       class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
 </div>
+
 
 <!--Main Contents-->
 <div role="main" class="ui-content">
@@ -105,13 +108,13 @@ if($error_state == true){
 	print('<div align="center"><div class="wrapper"><div class="box2">');
 	print("<strong>エラーが発生しました</strong><br/>条件の取得に失敗しました<br/>");
 	print("<span style='color:red;'>検索中に更新ボタンなどを押すとエラーになる場合がございます。</span><br/>");
-	print("恐れ入りますが<a href='mailform.php'>再検索</a>を<br/>お願い致します。</div></div>");
+	print("恐れ入りますが<a href='first.html'>再検索</a>を<br/>お願い致します。</div></div>");
 	print("<img src='./img/chara/notfound2.png'></div>");
 
 }elseif($agreement_count == 0){
 	print('<div align="center"><div class="wrapper"><div class="box2">');
 	print("<strong>ごめんなさい！</strong><br/>条件にマッチするコースが<br/>ありませんでした。<br/>");
-	print("条件を変えて<a href='mailform.php'>再検索</a><br/>してみてください！</div></div>");
+	print("条件を変えて<a href='first.html'>再検索</a><br/>してみてください！</div></div>");
 	print("<img src='./img/chara/notfound2.png'></div>");
 	//単純にデータがなかった時用
 

@@ -99,7 +99,7 @@ switch ($get_want) {//何をしたいかの検索
 		$min_kyot = 70;
 		$min_date = 0;
 		$min_hide = 0;
-		$min_natu = 20;
+		$min_natu = 0;
 		$min_ligh = 0;
 		break;
 	

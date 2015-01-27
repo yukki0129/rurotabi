@@ -30,13 +30,14 @@ $code = "error";
   <div data-role="header" data-theme="b" data-position="fixed">
      <a href="#panel" class="ui-btn ui-btn-a ui-icon-gear ui-btn-icon-left">Menu</a>
     <h1>プラン詳細</h1>
-     <a href="login.html" class="ui-btn ui-btn-a ui-btn-right">Logout</a>
+     <a href="first.html" class="ui-btn ui-btn-a ui-btn-right" data-ajax='false'>Re-Serch</a>
   </div>
 
 <!--Panel menu-->
 <div id="panel" data-role="panel" data-display="overlay">
 	<h3>Menu</h3>
-    <a href="login.html" class="ui-btn ui-btn-a">Logout</a>
+    <a href="first.html" class="ui-btn ui-btn-a" data-ajax='false'>再検索</a>
+    <a href="index.html" class="ui-btn ui-btn-a">トップページ</a>
     <a href="#" data-rel="close"
       class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
 </div>
