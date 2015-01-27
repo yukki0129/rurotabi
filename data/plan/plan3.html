@@ -13,14 +13,7 @@ var toDoubleDigits = function(num) {
 <h3>概要</h3>
 <p>
 	ここに概要(100文字程度でこのプランで何をするか、どこに行くか)などを記述してください。<br/>
-	このプランは10:00開始推奨です。
-	<script type="text/javascript">
-	if(hour > 11){//予定時刻
-		document.write("<span style='color:red;'>開始予定時刻を過ぎています</span>");
-	}else{
 
-	}
-	</script>
 </p>
 <p align="center">現在時刻は<strong>
 <script>
@@ -71,7 +64,7 @@ SchTxt02_b = hours+":"+toDoubleDigits(mins+30)+'～'+(hours+2)+":"+toDoubleDigit
 SchTxt03_a = '祇園四条でランチ＆買い物';
 SchTxt03_b = (hours+2)+":"+toDoubleDigits(mins)+'～'+(hours+4)+":"+toDoubleDigits(mins)+'<br>祇園四条にてランチ！<br>その後は祇園にてお買い物をお楽しみください。'
 SchTxt04_a = '四条大橋・八坂神社を見学';
-SchTxt04_b = (hours+4)+":"+toDoubleDigits(mins)+'～'+(hours+5)+":"+toDoubleDigits(mins+30)+'<br>厄除け・疫病退散・商売繁盛を授けてもらいましょう。'
+SchTxt04_b = (hours+4)+":"+toDoubleDigits(mins+30)+'～'+(hours+5)+":"+toDoubleDigits(mins+30)+'<br>厄除け・疫病退散・商売繁盛を授けてもらいましょう。'
 SchTxt05_a = '京都駅付近で解散';
 SchTxt05_b = (hours+5)+":"+toDoubleDigits(mins+30)+'<br>京都駅に帰ってきて解散です。'
 /*Change text end*/
