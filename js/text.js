@@ -1,40 +1,24 @@
 function rt1(){
 	console.log("TESTMES");
-var num = Math.floor(Math.random() * 5);
+var num = Math.floor(Math.random() * 2);
 var date = new Date();
 var hour = date.getHours();
+var greeting = "";
 
-if(0 <= hour && 5 >= hour){
-	greeting = "こんばんは。";
-	time_com = "早朝の京都を堪能してください！";
-}else if(6 <= hour && 11 >= hour){
-	greeting = "おはようございます！";
-	time_com = "ちょっと遠くまで出かけてみませんか";
-}else if(12 <= hour && 13 >= hour){
-	greeting = "ランチタイムですね。";
-	time_com = "<a href='login.html'>近くのランチスポット</a>へ行ってみませんか？";
-}else if(14 <= hour && 17 >= hour){
-	greeting = "こんにちは。";
-	time_com = "この時間は＊＊＊が空いているかも！";
-}else if(18 <= hour && 23 >= hour){
-	greeting = "こんばんは。";
-	time_com = "ライトアップを見に行きませんか？";
+if((0 <= hour) && (5 >= hour)){
+	greeting = "こんばんは。<br/>早朝の京都を堪能してください！";
+}else if((6 <= hour) && (11 >= hour)){
+	greeting = "おはようございます！<br/>ちょっと遠くまで出かけてみませんか";
+}else if((12 <= hour && 13 >= hour)){
+	greeting = "ランチタイムですね。<br/><a href='login.html'>近くのランチスポット</a>へ行ってみませんか？";
+}else if((14 <= hour && 17 >= hour)){
+	greeting = "こんにちは。<br/>京都を楽しんでください！";
+}else if((18 <= hour && 23 >= hour)){
+	greeting = "こんばんは。<br/>ライトアップを見に行きませんか？";
 }else{
 	greeting = "こんにちは(error)";
-	time_com="error";
 }
-
-
-switch(num){
-	case 0:
-		radn_txt = "今日はどこに出かけましょうか？";
-		break;
-	case 1: //時間による指定
-		radn_txt = time_com;
-		break;
-}
-
-document.write(greeting + "<br/>"+time_com);
+document.write(greeting);
 }
 //rt1 is end//
 

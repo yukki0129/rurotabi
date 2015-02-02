@@ -4,31 +4,30 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>エリア選択 - Kyotoreasure</title>
-<script type="text/javascript" src="./js/text.js"></script>
-<link rel="stylesheet"
-       href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"/>
-<script src="./js/text.js"></script>
+
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
 <link href="./css/main.css" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
-<div data-role="page">
+<div data-role="page" data-title="検索 - るろたび">
+<script type="text/javascript" src="./js/text.js">
+</script>
 
-<div id="nearspot_panel" data-role="panel" data-display="overlay">
-  <h3>近くのスポット検索</h3>
-    <a href="login.html" class="ui-btn ui-btn-a">近くのランチ</a>
-    <a href="login.html" class="ui-btn ui-btn-a"></a>
-    <a href="login.html" class="ui-btn ui-btn-a">近くのランチ</a>
-    <a href="#" data-rel="close"
-      class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
+<!--Panel menu-->
+<div id="panel" data-role="panel" data-display="overlay">
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-search" data-ajax='false'>再検索</a>
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse">戻る</a>
+    <a href="index.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-home">トップページ</a>
+    <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
 </div>
 
+<!--Header-->
   <div data-role="header" data-theme="b" data-position="fixed">
-     <a href="index.html" class="ui-btn ui-btn-a ui-btn-left">Home</a>
-    <h1>スタートページ</h1>
-     <a href="#nearspot_panel" class="ui-btn ui-btn-a ui-btn-right">Re-Serch</a>
+     <a href="#panel" class="ui-btn ui-btn-b ui-btn-icon-notext ui-icon-bars ui-corner-all">Menu</a>
+     <h1>スタートページ</h1>
+     <a href="first.html" class="ui-btn ui-btn-b ui-btn-right ui-btn-icon-notext ui-icon-search ui-corner-all" data-ajax='false'>Re-Serch</a>
   </div>
   <div role="main" class="ui-content" align="center">
   <img src="./img/logo_rurotabi.png" width="100%" style="max-width:500px" alt="Kyotoreasure"><br/>
@@ -63,6 +62,7 @@
     <h3>(C) 2014, Rurotabi Project.</h3>
   </div>
 </div>
-
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
 </body>
 </html>

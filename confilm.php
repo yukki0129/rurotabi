@@ -9,13 +9,13 @@ include 'serch.php';
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>検索結果 - るろたび</title>
-<!--Script Load-->
+<!--Script CSS Load-->
 <script type="text/javascript" src="./js/text.js"></script>
+<!--jQuery Load-->
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
 <link rel="stylesheet"
        href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js">
-</script>
 <link href="./css/main.css" rel="stylesheet" type="text/css">
 <?php
 $allcount = 0;
@@ -29,9 +29,9 @@ $allcount = 0;
 
 <div data-role="page" data-title="検索結果 - るろたび">
   <div data-role="header" data-theme="b" data-position="fixed">
-     <a href="#panel" class="ui-btn ui-btn-a ui-icon-gear ui-btn-icon-left">Menu</a>
+<a href="#panel" class="ui-btn ui-btn-b ui-btn-icon-notext ui-icon-bars ui-corner-all">Menu</a>
     <h1>プラン詳細</h1>
-     <a href="first.html" class="ui-btn ui-btn-a ui-btn-right" data-ajax='false'>Re-Serch</a>
+     <a href="first.html" class="ui-btn ui-btn-b ui-btn-right ui-btn-icon-notext ui-icon-search ui-corner-all" data-ajax='false'>Re-Serch</a>
   </div>
 
 <!--Panel menu-->
@@ -60,16 +60,7 @@ $allcount = 0;
   <p>
   <!--Serch result-->
   <?php 
-  
-  /*Debug
-  print("SEL : ".$get_want);
-  print("京都 limit = ".$min_kyot."<br/>");
-  print("デー limit = ".$min_date."<br/>");
-  print("隠れ limit = ".$min_hide."<br/>");
-  print("自然 limit = ".$min_natu."<br/>");
-  print("ライ　limit = ".$min_ligh."<br/>");
-  */
-							print("<ul data-role='listview'>");
+	print("<ul data-role='listview'>");
   $agreement_count = 0;
   for ($i=0; $i < $file_count ; $i++) {
 	if($get_area == $str[$i][3] || $get_area == "UNSELECTED"){ //エリア合致 or 
@@ -84,8 +75,13 @@ $allcount = 0;
 							print("<li><a href='plan.php?code=".$str[$i][0]."' data-ajax='false' data-transition='slide'><img src='./img/top/".$str[$i][12]."'><h2>".$str[$i][1]);
               if($time_check == $str[$i][4]){
                 print("<img src='./img/king_1.png'>");
+              }else if((($time_check+120) <= $str[$i][4]) || (($time_check-120) <= $str[$i][4])){
+                print("<img src='./img/king_2.png'>");
+              }else if((($time_check+180) <= $str[$i][4]) || (($time_check-180) <= $str[$i][4])){
+                print("<img src='./img/king_3.png'>");
               }
                 print("</h2>");
+              
 							print("<p>".$str[$i][2]."<br/>");
 							$needtime_h =  floor ($str[$i][4] / 60); 
 							$needtime_m = $str[$i][4] % 60; 

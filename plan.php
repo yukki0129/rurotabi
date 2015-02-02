@@ -15,7 +15,7 @@ $utf8_title = mb_convert_encoding($page_title, "UTF-8");
 $utf8_url =  mb_convert_encoding($nowUrl, "UTF-8");
 $linemsg = $utf8_title.' - '.$utf8_url;
 */
-$linemsg = '「'.$page_title.'」　: '.$nowUrl.' - るろたび';
+$linemsg = '「'.$page_title.'」　: '.$nowUrl.' - るろたび ';
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,9 +27,9 @@ $linemsg = '「'.$page_title.'」　: '.$nowUrl.' - るろたび';
 <script type="text/javascript" src="./js/text.js"></script>
 <link rel="stylesheet"
        href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js">
-</script>
+<!--jQuery Load-->
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
 <link href="./css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -43,11 +43,10 @@ $linemsg = '「'.$page_title.'」　: '.$nowUrl.' - るろたび';
 
 <!--Panel menu-->
 <div id="panel" data-role="panel" data-display="overlay">
-	<h3 align="center">Menu</h3>
     <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-search" data-ajax='false'>再検索</a>
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse">戻る</a>
     <a href="index.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-home">トップページ</a>
-    <a href="#" data-rel="close"
-      class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
+    <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
 </div>
 
 <!--Main Contents-->
@@ -69,7 +68,7 @@ print('<h2>'.@$str[$code][1].'</h2>');
 
 <a href="line://msg/text/<?php echo($linemsg);?>"><img src="img/line_button.png" width="115" height="28" alt="LINEで送る" /></a>
 <a href="http://www.facebook.com/share.php?u=<?php echo($nowUrl);?>"><img src="img/fb_btn.png" alt="Facebookでシェア" border="0" /></a>
-<br/>友達にプランをシェアしよう！</p></div>
+<br/><strong><a href="#">ツイートキャンペーン実施中！</a></strong><br/>ハッシュタグ「#るろたび」をつけてつぶやいて、賞品をGETしよう！</p></div>
 
 <div>
 
@@ -92,9 +91,9 @@ echo $geted_page;
 <div data-role="footer" data-position="fixed">
     <div data-role="navbar">
         <ul>
-            <li><a href="first.html" class="ui-btn-active" data-ajax="false">再検索</a></li>
-            <li><a href="index.html">トップ</a></li>
-            <li><a href="login.html">ログアウト</a></li>
+          <li><a href="index.html"　data-rel="back" data-direction="reverse">戻る</a></li>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="first.html" class="ui-btn-active" data-ajax="false">再検索</a></li>
         </ul>
     </div>
 </div>

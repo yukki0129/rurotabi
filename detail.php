@@ -12,8 +12,9 @@ include 'serch.php';
 <script type="text/javascript" src="./js/text.js"></script>
 <link rel="stylesheet"
        href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js">
+<!--jQuery Load-->
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
 </script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <link href="./css/main.css" rel="stylesheet" type="text/css">
@@ -57,9 +58,9 @@ switch($_POST['entry_area']){
 
 <div data-role="page">
   <div data-role="header" data-theme="b" data-position="fixed">
-     <a href="index.html" class="ui-btn ui-btn-a ui-btn-left">Home</a>
+     <a href="#panel" class="ui-btn ui-btn-b ui-btn-icon-notext ui-icon-bars ui-corner-all">Menu</a>
     <h1>詳細条件</h1>
-     <a href="login.html" class="ui-btn ui-btn-a ui-btn-right">Logout</a>
+      <a href="first.html" class="ui-btn ui-btn-b ui-btn-right ui-btn-icon-notext ui-icon-search ui-corner-all" data-ajax='false'>Re-Serch</a>
   </div>
   <div role="main" class="ui-content" align="center">
   <img src="./img/logo_rurotabi.png" width="100%" style="max-width:500px" alt="Kyotoreasure"><br/>

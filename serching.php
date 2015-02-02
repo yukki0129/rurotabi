@@ -33,9 +33,9 @@ $_SESSION['wantdo'] = "目的を取得できませんでした";
 <script type="text/javascript" src="./js/text.js"></script>
 <link rel="stylesheet"
        href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js">
-</script>
+<!--jQuery Load-->
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
 <link href="./css/main.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 	window.addEventListener('load', function () {  
@@ -59,9 +59,9 @@ $_SESSION['wantdo'] = "目的を取得できませんでした";
 <!--Header-->
 <div data-role="page">
   <div data-role="header" data-theme="b" data-position="fixed">
-     <a href="#panel" class="ui-btn ui-btn-a ui-icon-gear ui-btn-icon-left">Menu</a>
+     <a href="#panel" class="ui-btn ui-btn-b ui-btn-icon-notext ui-icon-bars ui-corner-all">Menu</a>
     <h1>検索中</h1>
-     <a href="login.html" class="ui-btn ui-btn-a ui-btn-right">Logout</a>
+     <a href="first.html" class="ui-btn ui-btn-b ui-btn-right ui-btn-icon-notext ui-icon-search ui-corner-all" data-ajax='false'>Re-Serch</a>
   </div>
 <!--</div>-->
 
