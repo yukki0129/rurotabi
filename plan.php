@@ -25,12 +25,24 @@ $linemsg = '「'.$page_title.'」　: '.$nowUrl.' - るろたび ';
 <title><?php echo($page_title);?> - るろたび</title>
 <!--Main Script-->
 <script type="text/javascript" src="./js/text.js"></script>
-<link rel="stylesheet"
-       href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
 <!--jQuery Load-->
 <script src="./js/jquery-1.11.1.min.js"></script>
 <script src="./js/jquery.mobile-1.4.5.min.js"></script>
 <link href="./css/main.css" rel="stylesheet" type="text/css">
+<link href="./css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+function get_url_js()
+{
+  var vars = new Object, params;
+  var temp_params = window.location.search.substring(1).split('&');
+  for(var i = 0; i <temp_params.length; i++) {
+    params = temp_params[i].split('=');
+    vars[params[0]] = params[1];
+  }
+  return vars;
+}
+
+</script>
 </head>
 <body>
 <!--Header-->
@@ -40,13 +52,15 @@ $linemsg = '「'.$page_title.'」　: '.$nowUrl.' - るろたび ';
     <h1>プラン詳細</h1>
      <a href="first.html" class="ui-btn ui-btn-b ui-btn-right ui-btn-icon-notext ui-icon-search ui-corner-all" data-ajax='false'>Re-Serch</a>
   </div>
-
-<!--Panel menu-->
+<!--Panel Contents-->
 <div id="panel" data-role="panel" data-display="overlay">
-    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-search" data-ajax='false'>再検索</a>
-    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse">戻る</a>
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-search" data-ajax='false'>プラン検索</a>
+    <a href="javascript:void(0)" onClick="SetCookie()" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-star" style="margin:-10px 0px 0px 0px;">このプランを保存</a>
+    <p id="output" style="margin:-10px 0px -10px 0px;"></p>
+    <p id="output2" style="margin:-10px 0px -10px 0px;"></p>
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse" style="margin:-10px 0px -10px 0px;">戻る</a>
     <a href="index.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-home">トップページ</a>
-    <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
+    <a href="#" data-role="button" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left" data-inline='true'>閉じる</a>
 </div>
 
 <!--Main Contents-->
@@ -99,6 +113,42 @@ echo $geted_page;
 </div>
 </div>
 </div>
+<script type="text/javascript">
+//cookieセット時の動作
+function cookie_warn(){
+  if(window.confirm('プランは一つしか保存できません。続けると、前に保存したコースは削除されますが、それでもよろしいですか？')){
+  var CookieInfo = "savecode="+codenum+";max-age=2592000";
+  document.cookie = CookieInfo;
+  window.alert("このプランを保存しました");
+  }else{
+    window.alert('キャンセルされました'); // 警告ダイアログを表示
+  }
+}
+
+
+
+function SetCookie(){
+  url_ref = get_url_js();
+  codenum = url_ref['code'];
+
+saveurl = GetCookie('code');
+if(typeof(saveurl) == "undefined"){
+  var CookieInfo = "savecode="+codenum+";max-age=2592000";
+  document.cookie = CookieInfo;
+  alert("このプランを保存しました");
+  }else{
+  cookie_warn();
+  }
+
+
+
+
+}
+</script>
+<script type="text/javascript">
+textget();
+textget2();
+  </script>
 
 </body>
 </html>

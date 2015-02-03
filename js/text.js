@@ -79,3 +79,35 @@ function myFunc(){
      myMess = myMess1 + " " + myMess2 + " " + myMess3;
      document.write( myMess );
 }
+ function textget(){
+        rundom_num = Math.floor(Math.random()*35)+1;
+        rundom_link = '<a href="plan.php?code='+rundom_num+'" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-recycle" data-ajax="false">ランダムプラン</a>';
+        target = document.getElementById("output");
+        target.innerHTML = rundom_link;
+        }
+        function textget2(){
+            saveurl = GetCookie('savecode');
+            url_put = '<a href="plan.php?code='+saveurl+'" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-heart" data-ajax="false">保存したプラン</a>';
+            target2 = document.getElementById("output2");
+            target2.innerHTML = url_put;
+        }
+
+
+function GetCookie( name ){
+    var result = null;
+    var cookieName = name + '=';
+    var allcookies = document.cookie;
+    var position = allcookies.indexOf( cookieName );
+    if( position != -1 ){
+        var startIndex = position + cookieName.length;
+        var endIndex = allcookies.indexOf( ';', startIndex );
+        if( endIndex == -1 ){
+            endIndex = allcookies.length;
+        }
+        result = decodeURIComponent(
+            allcookies.substring( startIndex, endIndex ) );
+    }
+
+    return result;
+}
+

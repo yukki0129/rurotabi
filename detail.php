@@ -10,14 +10,12 @@ include 'serch.php';
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>エリア選択 - Kyotoreasure</title>
 <script type="text/javascript" src="./js/text.js"></script>
-<link rel="stylesheet"
-       href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
 <!--jQuery Load-->
 <script src="./js/jquery-1.11.1.min.js"></script>
 <script src="./js/jquery.mobile-1.4.5.min.js"></script>
 </script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <link href="./css/main.css" rel="stylesheet" type="text/css">
+<link href="./css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -62,6 +60,16 @@ switch($_POST['entry_area']){
     <h1>詳細条件</h1>
       <a href="first.html" class="ui-btn ui-btn-b ui-btn-right ui-btn-icon-notext ui-icon-search ui-corner-all" data-ajax='false'>Re-Serch</a>
   </div>
+
+  <!--Panel menu-->
+<div id="panel" data-role="panel" data-display="overlay">
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-search" data-ajax='false'>プラン検索</a>
+    <p id="output" style="margin:-10px 0px -10px 0px;"></p>
+    <p id="output2" style="margin:-10px 0px -10px 0px;"></p>
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse" style="margin:-10px 0px -10px 0px;">戻る</a>
+    <a href="index.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-home">トップページ</a>
+    <a href="#" data-role="button" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left" data-inline='true'>閉じる</a>
+</div>
   <div role="main" class="ui-content" align="center">
   <img src="./img/logo_rurotabi.png" width="100%" style="max-width:500px" alt="Kyotoreasure"><br/>
   場所：<strong><?php echo $text;?></strong><br/>
@@ -105,6 +113,9 @@ switch($_POST['entry_area']){
     <h3>Copyright 2014, Rurotabi Project.</h3>
   </div>
 </div>
-
+<script type="text/javascript">
+textget();
+textget2();
+  </script>
 </body>
 </html>

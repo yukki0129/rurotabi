@@ -3,12 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>エリア選択 - Kyotoreasure</title>
-
-
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<title>エリア選択 - るろたび</title>
 <link href="./css/main.css" rel="stylesheet" type="text/css"/>
-
+<link href="./css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div data-role="page" data-title="検索 - るろたび">
@@ -17,10 +14,18 @@
 
 <!--Panel menu-->
 <div id="panel" data-role="panel" data-display="overlay">
-    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-search" data-ajax='false'>再検索</a>
-    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse">戻る</a>
+<script type="text/javascript">
+  $(#index).live( "pageshow", function(){
+  textget();
+  textget2();
+});
+</script>
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-search" data-ajax='false'>プラン検索</a>
+    <p id="output" style="margin:-10px 0px -10px 0px;"></p>
+    <p id="output2" style="margin:-10px 0px -10px 0px;"></p>
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse" style="margin:-10px 0px -10px 0px;">戻る</a>
     <a href="index.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-home">トップページ</a>
-    <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
+    <a href="#" data-role="button" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left" data-inline='true'>閉じる</a>
 </div>
 
 <!--Header-->
@@ -64,5 +69,9 @@
 </div>
 <script src="./js/jquery-1.11.1.min.js"></script>
 <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+textget();
+textget2();
+  </script>
 </body>
 </html>

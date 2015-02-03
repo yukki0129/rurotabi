@@ -14,8 +14,7 @@ include 'serch.php';
 <!--jQuery Load-->
 <script src="./js/jquery-1.11.1.min.js"></script>
 <script src="./js/jquery.mobile-1.4.5.min.js"></script>
-<link rel="stylesheet"
-       href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<link href="./css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
 <link href="./css/main.css" rel="stylesheet" type="text/css">
 <?php
 $allcount = 0;
@@ -36,11 +35,12 @@ $allcount = 0;
 
 <!--Panel menu-->
 <div id="panel" data-role="panel" data-display="overlay">
-  <h3>Menu</h3>
-    <a href="first.html" class="ui-btn ui-btn-a" data-ajax='false'>再検索</a>
-    <a href="index.html" class="ui-btn ui-btn-a">トップページ</a>
-    <a href="#" data-rel="close"
-      class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">閉じる</a>
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-search" data-ajax='false'>プラン検索</a>
+    <p id="output" style="margin:-10px 0px -10px 0px;"></p>
+    <p id="output2" style="margin:-10px 0px -10px 0px;"></p>
+    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse" style="margin:-10px 0px -10px 0px;">戻る</a>
+    <a href="index.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-home">トップページ</a>
+    <a href="#" data-role="button" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left" data-inline='true'>閉じる</a>
 </div>
 
 
@@ -126,13 +126,6 @@ if($error_state == true){
 
 <!--Main Contents End-->
 
-  <!--
-  <div data-role="footer" data-position="fixed">
-    <h3>Copyright 2014, Project Kyotreasure.</h3>
-  </div>
-</div>
--->
-
 <!--Footer Content-->
 <div data-role="footer" data-position="fixed">
     <div data-role="navbar">
@@ -154,5 +147,11 @@ if($error_state == true){
 	});
 </script>
 
+<!--Panel script-->
+<script type="text/javascript">
+textget();
+textget2();
+  </script>
+  
 </body>
 </html>
