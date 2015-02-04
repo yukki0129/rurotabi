@@ -9,6 +9,7 @@ $code = "error";
 }
 $nowUrl = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 $page_title=$str[$code][1];
+$page_code = $str[$code][0];
 /*
 以下、ページ文字コードがUTF-8ではない場合のコード
 $utf8_title = mb_convert_encoding($page_title, "UTF-8");
@@ -58,6 +59,7 @@ function get_url_js()
     <a href="javascript:void(0)" onClick="SetCookie()" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-star" style="margin:-10px 0px 0px 0px;">このプランを保存</a>
     <p id="output" style="margin:-10px 0px -10px 0px;"></p>
     <p id="output2" style="margin:-10px 0px -10px 0px;"></p>
+    <?php echo('<a href="redirect.php?mapcode='.$str[$code][0].'" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-location" target="_blank">このプランのマップ</a></li>'); ?>
     <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse" style="margin:-10px 0px -10px 0px;">戻る</a>
     <a href="index.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-home">トップページ</a>
     <a href="#" data-role="button" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left" data-inline='true'>閉じる</a>
@@ -106,8 +108,8 @@ echo $geted_page;
     <div data-role="navbar">
         <ul>
           <li><a href="index.html"　data-rel="back" data-direction="reverse">戻る</a></li>
-          <li><a href="index.html">トップ</a></li>
-          <li><a href="first.html" class="ui-btn-active" data-ajax="false">再検索</a></li>
+          <?php echo('<li><a href="redirect.php?mapcode='.$str[$code][0].'" class="ui-btn-active" target="_blank">マップ</a></li>'); ?>
+          <li><a href="first.html"  data-ajax="false">再検索</a></li>
         </ul>
     </div>
 </div>

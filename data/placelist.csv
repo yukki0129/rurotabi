@@ -1,37 +1,37 @@
 0,コース名,概要,エリア,所要時間(m),京都スコア,デートスコア,隠れスコア,自然スコア,ライトスコア,時間帯,プランURL,画像,コード,MAPURL
 1,午前中だけ京都,3時間ほど京都駅周辺で時間をつぶせます,KYOTO,180,70,70,0,20,0,day,plan1.html,tower.jpg,2,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kaElUnOgC5Js
-2,じっくり京都観光,1日かけてじっくり京都を観光します,KYOTO,540,100,70,30,20,0,day,plan2.html,senbon.jpg,3,
-3,短時間で京都満喫,6時間程度で「これぞ京都」を体験します,KYOTO,360,100,60,0,10,0,all,plan3.html,hushimi.jpg,4,
-4,京都国際マンガミュージアムへの旅,京都国際マンガミュージアムを見学します,KYOTO,360,30,30,40,0,0,all,plan4.html,honnnou.jpg,5,
-5,午前中京都2,午前中だけで京都を満喫できます,KYOTO,180,70,40,20,0,0,day,plan5.html,kyotost.jpg,6,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kn_Y6uetTXog
-6,Kyoto Night.,夜の京都をお楽しみください,KYOTO,180,80,90,0,0,100,night,plan6.html,kuchu.jpg,7,
-7,水族館デート,1日かけて京都水族館を中心に有名どころを巡ります,KYOTO,540,90,100,30,20,0,all,plan7.html,kyotost.jpg,8,
-8,パワースポットデート,晴明神社を中心に1日かけて京都を巡ります,KYOTO,540,90,100,50,20,0,all,plan8.html,gosho.jpg,9,
-9,THE 金閣寺,金閣寺や竜安寺などを1日かけて。,KINKAKU,480,80,30,40,50,0,all,plan9.html,kinkaku.jpg,10,
-10,太秦映画村見学プラン,映画村や美術館を1日で巡ります,KINKAKU,420,80,80,60,50,0,all,plan10.html,ryouan.jpg,11,
-11,半日金閣寺プラン,6時間程度を金閣寺周辺で過ごすプランです,KINKAKU,360,80,70,30,0,0,all,plan11.html,kitano.jpg,12,
-12,金閣寺から天満宮へ,午前中3時間で金閣寺や北野天満宮へ！,KINKAKU,180,80,60,70,0,0,all,plan12.html,kinkaku.jpg,13,
-13,3時間デート＠金閣寺,金閣寺周辺で短いデートが出来ます,KINKAKU,180,80,100,20,20,0,all,plan13.html,renka.jpg,14,
-14,金閣寺1日デート,パワースポットの晴明神社から金閣寺などを巡ります,KINKAKU,360,60,100,30,0,0,all,plan14.html,seimei.jpg,15,
-15,神社・天満宮コース,半日で金閣寺エリアを巡るコースです,KINKAKU,360,70,90,70,50,0,all,plan15.html,kinkaku.jpg,16,
+2,じっくり京都観光,1日かけてじっくり京都を観光します,KYOTO,540,100,70,30,20,0,day,plan2.html,senbon.jpg,3,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.k3VPrMVdPnLk
+3,短時間で京都満喫,6時間程度で「これぞ京都」を体験します,KYOTO,360,100,60,0,10,0,all,plan3.html,hushimi.jpg,4,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kQBZaPX-QNNs
+4,京都国際マンガミュージアムへの旅,京都国際マンガミュージアムを見学します,KYOTO,360,30,30,40,0,0,all,plan4.html,honnnou.jpg,5,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.k7hiycCfEgEM
+5,京都の自然,午前中だけで京都の自然を満喫できます,KYOTO,180,70,40,20,0,0,day,plan5.html,kyotost.jpg,6,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kn_Y6uetTXog
+6,Kyoto Night.,夜の京都をお楽しみください,KYOTO,180,80,90,0,0,100,night,plan6.html,kuchu.jpg,7,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kDpIMAL7Z-FE
+7,水族館デート,1日かけて京都水族館を中心に有名どころを巡ります,KYOTO,540,90,100,30,20,0,all,plan7.html,kyotost.jpg,8,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kqWFo5O6KHys
+8,パワースポットデート,晴明神社を中心に1日かけて京都を巡ります,KYOTO,540,90,100,50,20,0,all,plan8.html,gosho.jpg,9,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kwD2FgP35JSo
+9,THE 金閣寺,金閣寺や竜安寺などを1日かけて。,KINKAKU,480,80,30,40,50,0,all,plan9.html,kinkaku.jpg,10,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.ke1oaGmRS4qU
+10,太秦映画村見学プラン,映画村や美術館を1日で巡ります,KINKAKU,420,80,80,60,50,0,all,plan10.html,ryouan.jpg,11,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kA5lrm48ftCU
+11,半日金閣寺プラン,6時間程度を金閣寺周辺で過ごすプランです,KINKAKU,360,80,70,30,0,0,all,plan11.html,kitano.jpg,12,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kYttAPLfxmuc
+12,金閣寺から天満宮へ,午前中3時間で金閣寺や北野天満宮へ！,KINKAKU,180,80,60,70,0,0,all,plan12.html,kinkaku.jpg,13,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kOYoFBOiHjC0
+13,3時間デート＠金閣寺,金閣寺周辺で短いデートが出来ます,KINKAKU,180,80,100,20,20,0,all,plan13.html,renka.jpg,14,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kpa3ld_30jAY
+14,金閣寺1日デート,パワースポットの晴明神社から金閣寺などを巡ります,KINKAKU,360,60,100,30,0,0,all,plan14.html,seimei.jpg,15,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kdHT1wUIwTrk
+15,神社・天満宮プラン,半日で金閣寺エリアを巡るコースです,KINKAKU,360,70,90,70,50,0,all,plan15.html,kinkaku.jpg,16,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kYttAPLfxmuc
 16,午前中神社巡り,午前中だけで主要な寺社を巡ります,KINKAKU,180,80,100,0,70,0,day,plan16.html,kinkaku.jpg,17,
-17,京都の自然体感！,1日かけて京都の自然を体感します,KINKAKU,540,80,60,50,100,0,all,plan17.html,kamigamo.jpg,18,
-18,上賀茂から下賀茂,上賀茂神社から植物園を経て下賀茂へ向かいます,KINKAKU,360,70,20,50,80,0,all,plan18.html,kinkaku.jpg,19,
-19,そうだ、銀閣寺行こう。,そうだ！銀閣寺へ行こう！銀閣寺周辺満喫コース,GINKAKU,540,100,40,50,50,0,all,plan19.html,heian.jpg,20,
-20,銀閣寺から哲学の道へ,銀閣寺から出発し、達磨堂などを見学します,GINKAKU,540,100,30,50,50,0,all,plan20.html,ginkaku.jpg,21,
-21,満足さん他寺社巡り,「満足さん」こと、満足稲荷神社から銀閣寺へのコースです,GINKAKU,360,100,40,50,50,0,all,plan21.html,nanzen.jpg,22,
-22,南禅寺から銀閣寺へ,3時間で銀閣寺周辺を散策します,GINKAKU,180,100,60,50,50,0,day,plan22.html,ginkaku.jpg,23,
-23,動物園＆銀閣寺デート,動物園や銀閣寺を巡る、ちょっと渋いデートコース,GINKAKU,540,100,80,50,50,0,all,plan23.html,ginkaku.jpg,24,
-24,銀閣寺から動物園へ,半日で動物園や銀閣寺を堪能します,GINKAKU,360,100,80,30,50,0,day,plan24.html,ginkaku.jpg,25,
-25,銀閣寺・哲学の道半日コース,銀閣寺からお寺を半日で巡れます,GINKAKU,180,100,80,50,50,0,day,plan25.html,tetsugaku.jpg,26,
-26,岡崎疎水から京都を知る,岡崎疎水から水路閣を経て銀閣寺に向かいます,GINKAKU,540,100,30,30,50,0,all,plan26.html,tetsugaku.jpg,27,
-27,侘び寂びを知る,疎水や哲学の道などをたどる侘び寂びを知るコースです,GINKAKU,360,100,30,20,80,0,all,plan27.html,okazaki.jpg,28,
-28,嵐山で自然を感じる,渡月橋や大河内山荘などで、自然を感じます,ARASHI,540,100,20,60,80,0,all,plan28.html,togetsu.jpg,29,
-29,一日で嵐山満喫,竹林やお寺など、嵐山の有名スポットを巡ります,ARASHI,540,100,30,70,80,0,all,plan29.html,chikurin.jpg,30,
-30,嵐山・寺巡り,天龍寺や常寂光寺など有名なお寺を巡ります,ARASHI,360,100,30,60,80,0,all,plan30.html,seiryou.jpg,31,
-31,歴史をマナブ＠嵐山,二尊院など歴史的に有名なお寺を巡れます,ARASHI,360,100,80,70,80,0,all,plan31.html,rakugaki.jpg,32,
-32,Nature feeling,午前中だけで嵐山の自然を感じます,ARASHI,180,100,30,60,80,0,day,plan32.html,eikan.jpg,33,
-33,夜の嵐山,ライトアップされた嵐山を巡ります,ARASHI,120,100,100,60,80,100,night,plan33.html,togetsu2.jpg,34,
-34,嵐山満喫デート,嵐山の魅力を全て感じることが出来るデートコースです,ARASHI,540,100,90,80,80,0,all,plan34.html,monkey.jpg,35,
-35,縁結び＆トロッコ,嵐山モンキーパークを中心としたデートコースです,ARASHI,360,100,90,60,80,0,all,plan35.html,tram.jpg,36,
-36,Arashiyama for busy couples,忙しいあなたとあなたのための嵐山デートコースです,ARASHI,180,100,90,50,80,0,day,plan36.html,imamiya.jpg,37,
+17,京都の自然体感！,1日かけて京都の自然を体感します,KINKAKU,540,80,60,50,100,0,all,plan17.html,kamigamo.jpg,18,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.k-YmQTcmiC0A
+18,上賀茂から下賀茂,上賀茂神社から植物園を経て下賀茂へ向かいます,KINKAKU,360,70,20,50,80,0,all,plan18.html,kinkaku.jpg,19,*
+19,そうだ、銀閣寺行こう。,そうだ！銀閣寺へ行こう！銀閣寺周辺満喫コース,GINKAKU,540,100,40,50,50,0,all,plan19.html,heian.jpg,20,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kUjeOIsV4eRI
+20,銀閣寺から哲学の道へ,銀閣寺から出発し、達磨堂などを見学します,GINKAKU,540,100,30,50,50,0,all,plan20.html,ginkaku.jpg,21,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kPMVPIZxdCl0
+21,満足さん他寺社巡り,「満足さん」こと、満足稲荷神社から銀閣寺へのコースです,GINKAKU,360,100,40,50,50,0,all,plan21.html,nanzen.jpg,22,*
+22,南禅寺から銀閣寺へ,3時間で銀閣寺周辺を散策します,GINKAKU,180,100,60,50,50,0,day,plan22.html,ginkaku.jpg,23,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kfb0ry-c0cRk
+23,動物園＆銀閣寺デート,動物園や銀閣寺を巡る、ちょっと渋いデートコース,GINKAKU,540,100,80,50,50,0,all,plan23.html,ginkaku.jpg,24,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kNYGJWOQR1Dg
+24,銀閣寺から動物園へ,半日で動物園や銀閣寺を堪能します,GINKAKU,360,100,80,30,50,0,day,plan24.html,ginkaku.jpg,25,*
+25,銀閣寺・哲学の道 午前プラン,銀閣寺からお寺を半日で巡れます,GINKAKU,180,100,80,50,50,0,day,plan25.html,tetsugaku.jpg,26,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.k5F--Bljw8u8
+26,岡崎疎水から京都を知る,岡崎疎水から水路閣を経て銀閣寺に向かいます,GINKAKU,540,100,30,30,50,0,all,plan26.html,tetsugaku.jpg,27,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kQHrtAlsyeCA
+27,侘び寂びを知る,疎水や哲学の道などをたどる侘び寂びを知るコースです,GINKAKU,360,100,30,20,80,0,all,plan27.html,okazaki.jpg,28,*
+28,嵐山で自然を感じる,渡月橋や大河内山荘などで、自然を感じます,ARASHI,540,100,20,60,80,0,all,plan28.html,togetsu.jpg,29,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.k_9E0SwjfQjY
+29,一日で嵐山満喫,竹林やお寺など、嵐山の有名スポットを巡ります,ARASHI,540,100,30,70,80,0,all,plan29.html,chikurin.jpg,30,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kjDxVX_xOop0
+30,嵐山・寺巡り,天龍寺や常寂光寺など有名なお寺を巡ります,ARASHI,360,100,30,60,80,0,all,plan30.html,seiryou.jpg,31,*
+31,歴史をマナブ＠嵐山,二尊院など歴史的に有名なお寺を巡れます,ARASHI,360,100,80,70,80,0,all,plan31.html,rakugaki.jpg,32,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kveeX6VwjLw4
+32,Nature feeling,午前中だけで嵐山の自然を感じます,ARASHI,180,100,30,60,80,0,day,plan32.html,eikan.jpg,33,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kSZduKgfOENw
+33,夜の嵐山,ライトアップされた嵐山を巡ります,ARASHI,120,100,100,60,80,100,night,plan33.html,togetsu2.jpg,34,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kJRmciuEA8UM
+34,嵐山満喫デート,嵐山の魅力を全て感じることが出来るデートコースです,ARASHI,540,100,90,80,80,0,all,plan34.html,monkey.jpg,35,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.kPG9GH32lojU
+35,縁結び＆トロッコ,嵐山モンキーパークを中心としたデートコースです,ARASHI,360,100,90,60,80,0,all,plan35.html,tram.jpg,36,*
+36,Arashiyama for busy couples,忙しいあなたとあなたのための嵐山デートコースです,ARASHI,180,100,90,50,80,0,day,plan36.html,imamiya.jpg,37,https://www.google.com/maps/d/u/0/viewer?mid=zSfIhdfTHSDY.khwsLRxXAajQ
