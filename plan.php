@@ -109,7 +109,7 @@ echo $geted_page;
     <div data-role="navbar">
         <ul>
           <li><a href="index.html"　data-rel="back" data-direction="reverse">戻る</a></li>
-          <?php echo('<li><a href="redirect.php?mapcode='.$str[$code][0].'" class="ui-btn-active" target="_blank">マップ</a></li>'); ?>
+          <?php echo('<li><a href="redirect.php?url='.$str[$code][14].'" class="ui-btn-active" target="_blank">マップ</a></li>'); ?>
           <li><a href="first.html"  data-ajax="false">再検索</a></li>
         </ul>
     </div>

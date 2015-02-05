@@ -54,14 +54,23 @@ $url = "error";
 <div role="main" class="ui-content">
   <div align="center">
   <img src="./img/logo_rurotabi.png" width="100%" style="max-width:500px" alt="Kyotoreasure"><br/></div>
-  <p><strong>以下のページに移動しようとしています。</strong><br/>
+  <p align="center">
+  <img src="./img/chara/redirect.png" width="100%" style="max-width:300px"alt="外部ページへ移動しようとしています" /><br>
+  </p>
+  <strong>以下のページに移動しようとしています。</strong><br/>
   ここより先は外部のサイトとなります。<br>
   </p>
   <p align="center">
   <?php
-  echo('<a href="'.$url.'"　target="_blank">'.$url.'</a>');
+  if($url == "error"){
+  	echo('<span style="color:red">【エラー】</span><br>URLを取得できませんでした<br>');
+  }else{
+  	echo('<a href="'.$url.'"　target="_blank">'.$url.'</a>');
+}
    ?>
    <br/>
+   </p><p align="center">
+    <?php if($url != "error"){echo('<a href="'.$url.'" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-action">外部サイトへ進む</a>'); }?>
    <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse">戻る</a>
    </p>
    <br>
@@ -73,7 +82,7 @@ $url = "error";
         <ul>
             <li><a href="first.html" class="ui-btn-active" data-ajax="false">再検索</a></li>
             <li><a href="index.html">トップ</a></li>
-            <li><a href="login.html">ログアウト</a></li>
+            <li><a href="first.html">再検索</a></li>
         </ul>
     </div>
 </div>
