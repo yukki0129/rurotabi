@@ -2,10 +2,17 @@
 session_start();
 header("Content-Type: text/html; charset=UTF-8");
 include 'serch.php';
+/*
 if(isset($_GET['mapcode'])){
 $mapcode = $_GET['mapcode'];
 }else{
 $mapcode = "error";
+}
+*/
+if(isset($_GET['url'])){
+$url = $_GET['url'];
+}else{
+$url = "error";
 }
 ?>
 <!DOCTYPE html>
@@ -47,13 +54,16 @@ $mapcode = "error";
 <div role="main" class="ui-content">
   <div align="center">
   <img src="./img/logo_rurotabi.png" width="100%" style="max-width:500px" alt="Kyotoreasure"><br/></div>
-  <p><strong>以下のページにリダイレクトしようとしています！</strong><br/>
+  <p><strong>以下のページに移動しようとしています。</strong><br/>
   ここより先は外部のサイトとなります。<br>
   </p>
+  <p align="center">
   <?php
-  $mapurl = $str[$mapcode][14];
-  echo('<a href="'.$mapurl.'">'.$mapurl.'</a>');
+  echo('<a href="'.$url.'"　target="_blank">'.$url.'</a>');
    ?>
+   <br/>
+   <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse">戻る</a>
+   </p>
    <br>
   </div>
 

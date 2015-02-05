@@ -59,7 +59,7 @@ function get_url_js()
     <a href="javascript:void(0)" onClick="SetCookie()" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-star" style="margin:-10px 0px 0px 0px;">このプランを保存</a>
     <p id="output" style="margin:-10px 0px -10px 0px;"></p>
     <p id="output2" style="margin:-10px 0px -10px 0px;"></p>
-    <?php echo('<a href="redirect.php?mapcode='.$str[$code][0].'" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-location" target="_blank">このプランのマップ</a></li>'); ?>
+    <?php echo('<a href="redirect.php?url='.$str[$code][14].'" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-location" target="_blank">このプランのマップ</a></li>'); ?>
     <a href="first.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-back" data-rel="back" data-direction="reverse" style="margin:-10px 0px -10px 0px;">戻る</a>
     <a href="index.html" class="ui-btn ui-btn-a ui-btn-icon-left ui-icon-home">トップページ</a>
     <a href="#" data-role="button" data-rel="close" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left" data-inline='true'>閉じる</a>
@@ -84,7 +84,8 @@ print('<h2>'.@$str[$code][1].'</h2>');
 
 <a href="line://msg/text/<?php echo($linemsg);?>"><img src="img/line_button.png" width="115" height="28" alt="LINEで送る" /></a>
 <a href="http://www.facebook.com/share.php?u=<?php echo($nowUrl);?>"><img src="img/fb_btn.png" alt="Facebookでシェア" border="0" /></a>
-<br/><strong><a href="#">ツイートキャンペーン実施中！</a></strong><br/>ハッシュタグ「#るろたび」をつけてつぶやいて、賞品をGETしよう！</p></div>
+<br/>
+<!--<strong><a href="#">ツイートキャンペーン実施中！</a></strong><br/>ハッシュタグ「#るろたび」をつけてつぶやいて、賞品をGETしよう！--></p></div>
 
 <div>
 
